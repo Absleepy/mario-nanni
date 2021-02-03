@@ -471,7 +471,7 @@ nav .navLinkHover:hover span {
 .input:focus {
   outline: none; }
 
-.owl-carousel {
+.owl-carousel .owl-stage-outer {
   cursor: grab; }
 
 .blackCarousel {
