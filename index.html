@@ -50,7 +50,7 @@
             <button class="navbar-toggler order2 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> 
               </button>
-              <div class="order1 nav-right-side mx-auto hide-on-phone">
+              <div class="order1 nav-right-side ml-auto hide-on-phone">
                   <div class="d-flex align-items-center after-border gap-12">
                   <div class="d-flex align-items-center">
                       <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
@@ -546,7 +546,7 @@
                             <h5 class="mb-0">
                               <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center c-pointer">
-                                    <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
+                                    <i id="plus1" class="plus-minus-icon color-primary fa fa-minus"></i>
                                     <h4 class="collapBtn w-100 hover-c-primary md-title my-0 collap-title-margin color-black">Customer Service</h4>
                                 </div>
                               </div>
@@ -1072,10 +1072,36 @@
 
     
     
-    // let plusIcon = true;
-    // const collapBtn = document.querySelectorAll('.collapBtn');
-    // const pM = document.querySelectorAll('.plus-minus-icon'); 
-    // // pM.forEach(btn => btn.classList.add("fa-plus"));
+    let plusIcon = true;
+    const collapBtn = document.querySelectorAll('.collapBtn');
+    const pM = document.querySelectorAll('.plus-minus-icon'); 
+    
+    collapBtn.forEach((colBtn, idx) =>{ 
+        colBtn.addEventListener('click', () =>{
+            plusIcon = !plusIcon;
+            //   plusIcon ? 
+               pM.forEach((icon, idx1) =>{   
+               
+                idx === idx1 &&  plusIcon ? 
+                (
+                    icon.classList.add("fa-minus"),
+                    icon.classList.remove("fa-plus")   
+                )
+                    : 
+                (
+                    icon.classList.remove("fa-minus"), 
+                    icon.classList.add("fa-plus")  
+                 )
+
+            })  
+             
+        })
+
+        
+    })
+    
+
+    // pM.forEach(btn => btn.classList.add("fa-plus"));
     //  collapBtn.forEach(btn => btn.addEventListener('click', () =>{
     //     plusIcon = !plusIcon;  
     //  pM.forEach((btn, idx1) => {
@@ -1087,8 +1113,7 @@
     //      console.log(lastIdx);
     //     btn.classList.add("fa-minus")});
     //  })})
-    // }))
-    //  pM.forEach(btn => btn.classList.add(plusIcon ? "fa-plus" : "fa-minus"))
+    // })) 
     
     $(document).ready(function(){
         
