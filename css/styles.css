@@ -40,8 +40,8 @@
 .logo {
   max-width: 200px; }
 
-.wrapper {
-  max-width: 1600px;
+.max-wrapper {
+  max-width: 1372.8px;
   margin: 0 auto; }
 
 * {
@@ -100,7 +100,7 @@ nav .navLinkHover:hover span {
   color: #f86011; }
 
 .primary-box-shadow {
-  box-shadow: 0px 10px 12px -1px #e8e8e8; }
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 24px 32px -6px; }
 
 .color-black {
   color: #000000; }
@@ -210,10 +210,10 @@ nav .navLinkHover:hover span {
   width: 50px;
   border-radius: 50%; }
 
-.mega-menu-card .icon-bg-light-blue {
+.icon-bg-light-blue {
   background-color: rgba(0, 166, 249, 0.1); }
 
-.mega-menu-card .icon-bg-light-blue i {
+.icon-bg-light-blue i {
   transition: 0.3s ease-in-out;
   color: #0064fe; }
 
@@ -250,6 +250,24 @@ nav .navLinkHover:hover span {
 
 /*END  HEADER STYLING */
 /* HERO STYLING */
+.home-header {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24) 93%, white 93%), url(https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-intro.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  border-color: rgba(0, 0, 0, 0.08);
+  border-style: solid;
+  background-size: cover;
+  visibility: visible;
+  animation-duration: 1s;
+  padding-top: 80px;
+  margin-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 32px; }
+
 .btn-c-primary button {
   background-color: #f86011;
   color: #fff;
@@ -499,6 +517,46 @@ nav .navLinkHover:hover span {
 .footer-link:hover {
   border-color: #f86011; }
 
+.animImg {
+  height: 100%;
+  background: rebeccapurple;
+  margin: 0 auto;
+  width: 450px; }
+
+.anim-layer {
+  height: 300px;
+  width: 500px; }
+
+.anim-layer-1 {
+  background-color: red;
+  z-index: 1; }
+
+.anim-layer-2 {
+  background-color: yellow;
+  z-index: 2;
+  height: 137px;
+  transform: rotate3d(1, 1, 1, 12deg);
+  right: 3px;
+  top: 83px; }
+
+.anim-layer-3 {
+  background-color: blue;
+  z-index: 3;
+  height: 214px;
+  border-radius: 50%;
+  top: 13px;
+  right: 0; }
+
+.anim-layer-4 {
+  background-color: green;
+  z-index: 4;
+  height: 161px;
+  width: 170px;
+  right: 0; }
+
+.animSection {
+  padding: 6% 0; }
+
 @media (min-width: 768px) {
   .twoCards-card {
     padding: 50px 60px 60px; }
@@ -518,14 +576,21 @@ nav .navLinkHover:hover span {
     padding-top: 60px; }
   .hero-right {
     padding-top: 0px !important;
-    padding-right: 0px !important;
+    padding-right: 0px !important; }
+  .col-left-margin {
+    margin-left: 14.4%; }
+  .col-right-margin {
     margin-right: 14.4%; }
   .text-right-md {
-    text-align: right; } }
+    text-align: right; }
+  .bigger-title {
+    font-size: 70px; } }
 
 @media (max-width: 768px) {
   .small-text-center {
     text-align: center; }
+  .bigger-title {
+    font-size: 45px; }
   .hero-section {
     padding-top: 30px; }
   .marketing-card {
@@ -548,6 +613,8 @@ nav .navLinkHover:hover span {
 @media (max-width: 992px) {
   .navLinks-responsive {
     order: 2; }
+  .nav-right-side {
+    margin-right: auto; }
   .sticky-row,
   .sticky-row-img-sec {
     flex-direction: column;
@@ -562,9 +629,7 @@ nav .navLinkHover:hover span {
 
 @media (max-width: 1280px) {
   .hide-on-md {
-    display: none; }
-  .font-72 {
-    font-size: 30px; } }
+    display: none; } }
 
 @media (min-width: 1280px) {
   .responsive-fonts {
@@ -576,8 +641,7 @@ nav .navLinkHover:hover span {
   .big-title {
     font-size: 3rem;
     font-weight: 700; }
-  .font-72 {
-    font-size: 72px;
+  .bigger-title {
     font-weight: 700;
     line-height: 1.12; }
   .navLinks-responsive {
