@@ -10,12 +10,6 @@
 .f-family-cursive {
   font-family: cursive; }
 
-.font-weight-700 {
-  font-weight: 700; }
-
-.font-weight-500 {
-  font-weight: 500; }
-
 .primary-hovered {
   transition: 0.3s ease-in-out; }
 
@@ -78,7 +72,8 @@ nav .nav-link-drop-down {
   left: 0;
   transition: all calc(300 * 1ms) cubic-bezier(0.42, 0.01, 0.58, 1);
   transform: translateY(10px);
-  box-shadow: 0px 10px 12px -1px #e8e8e8; }
+  box-shadow: 0px 10px 12px -1px #e8e8e8;
+  border-radius: 10px; }
 
 nav .nav-link-dropDrown-li {
   width: 248px !important;
@@ -204,6 +199,20 @@ nav .navLinkHover:hover span {
 
 .font-20px {
   font-size: 20px; }
+
+.font-weight-700 {
+  font-weight: 700; }
+
+.font-weight-500 {
+  font-weight: 500; }
+
+.font-30 {
+  font-size: 30px; }
+
+.lightBlackBorder {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 100px;
+  border-top-width: 0; }
 
 .mega-menu-card-icon {
   height: 50px;
@@ -498,6 +507,40 @@ nav .navLinkHover:hover span {
 .blackCarousel:hover {
   filter: invert(100%); }
 
+.weBuild-icon-container {
+  height: 72px;
+  width: 72px;
+  line-height: 36px;
+  border-color: #f86011;
+  border-width: 2px;
+  border-style: solid;
+  margin-right: 20px;
+  box-sizing: content-box;
+  border-radius: 20px; }
+  .weBuild-icon-container:hover .changeC {
+    color: red; }
+  .weBuild-icon-container .weBuild-icon {
+    border-color: #f86011;
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: content-box;
+    height: 72px;
+    width: 72px;
+    line-height: 72px;
+    border-radius: 20px;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0;
+    border-radius: 20px;
+    color: #f86011;
+    text-align: center; }
+    .weBuild-icon-container .weBuild-icon i {
+      background: #f86011;
+      padding: 7px;
+      border-radius: 10px;
+      color: #fff; }
+
 .footer,
 .footer-end {
   padding: 30px 0; }
@@ -518,44 +561,39 @@ nav .navLinkHover:hover span {
   border-color: #f86011; }
 
 .animImg {
-  height: 100%;
-  background: rebeccapurple;
   margin: 0 auto;
-  width: 450px; }
+  max-width: 60%;
+  padding-top: 0px !important;
+  padding-right: 0px !important;
+  margin-right: 7.68%;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  margin-left: 7.68%;
+  margin-bottom: 40px; }
+
+.hiteBtn {
+  border: 1px solid #fff; }
+
+.hiteBtn:hover {
+  background-color: transparent !important;
+  color: #fff; }
 
 .anim-layer {
-  height: 300px;
-  width: 500px; }
-
-.anim-layer-1 {
-  background-color: red;
-  z-index: 1; }
-
-.anim-layer-2 {
-  background-color: yellow;
-  z-index: 2;
-  height: 137px;
-  transform: rotate3d(1, 1, 1, 12deg);
-  right: 3px;
-  top: 83px; }
-
-.anim-layer-3 {
-  background-color: blue;
-  z-index: 3;
-  height: 214px;
-  border-radius: 50%;
-  top: 13px;
-  right: 0; }
-
-.anim-layer-4 {
-  background-color: green;
-  z-index: 4;
-  height: 161px;
-  width: 170px;
-  right: 0; }
+  max-width: 100%; }
 
 .animSection {
   padding: 6% 0; }
+
+.g-animP {
+  transform: matrix(1.0015, 0, 0, 0.9985, -16.08957, 4.02969); }
+
+.g-anim {
+  position: absolute;
+  top: 0; }
+
+.g-anim2 {
+  top: 0;
+  right: 0; }
 
 @media (min-width: 768px) {
   .twoCards-card {
@@ -587,6 +625,12 @@ nav .navLinkHover:hover span {
     font-size: 70px; } }
 
 @media (max-width: 768px) {
+  .animImg {
+    min-height: 550px; }
+  .animImg {
+    width: 100%; }
+  .reverseRow-small {
+    flex-direction: column-reverse !important; }
   .small-text-center {
     text-align: center; }
   .bigger-title {

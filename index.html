@@ -1,1146 +1,1091 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap --> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<!-- fontawesom -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-<!-- owl carousel -->
-<link rel="stylesheet" href="owlCarousel/owl.carousel.min.css"> 
-<link rel="stylesheet" href="owlCarousel/owl.theme.default.min.css">
-<!-- my styling -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlCarousel/owl.theme.default.min.css">
+    <!-- my styling -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Mario-nanni</title>
     <!-- wow js -->
     <link rel="stylesheet" href="css/animate.css">
 
     <!-- styling carousel dots -->
-    <style> 
-    .owl-carousel .owl-dots{
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-        margin-top: 20px;
-    }
-    .owl-carousel .owl-dots  .owl-dot{
-        border: 1px solid #f86011 ;
-        width: 20px ;
-        height: 20px ;
-        outline: none ;
-        border-radius: 50%;
-    }
-    .owl-carousel .owl-dot.active{
-       background-color: #f86011;
-       border-radius: 50%;
-    }
+    <style>
+        .owl-carousel .owl-dots {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .owl-carousel .owl-dots .owl-dot {
+            border: 1px solid #f86011;
+            width: 20px;
+            height: 20px;
+            outline: none;
+            border-radius: 50%;
+        }
+
+        .owl-carousel .owl-dot.active {
+            background-color: #f86011;
+            border-radius: 50%;
+        }
     </style>
 </head>
-<body> 
-            
+
+<body>
+
     <div class="wrapper">
-          
-            <nav  data-wow-duration=".7s" data-wow-delay=".01s" class="wow fadeInDown container-fluid  bg-white navbar sticky-top navbar-light navbar-expand-lg py-0 justifyCenter-on-big py-lg-4 py-md-4 py-2 px-3 max-wrapper">
-            <strong   id="logo">
+
+        <nav data-wow-duration=".7s" data-wow-delay=".01s"
+            class="wow fadeInDown container-fluid  bg-white navbar sticky-top navbar-light navbar-expand-lg py-0 justifyCenter-on-big py-lg-4 py-md-4 py-2 px-3 ">
+
+            <strong id="logo">
                 <a class="navbar-brand d-block" href="#">
                     <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/avada-marketing-logo-2x.png"
-                    class="logo"
-                    width="100%" alt="Logo">
-                </a>    
+                        class="logo" width="100%" alt="Logo">
+                </a>
             </strong>
 
-            <button class="navbar-toggler order2 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
-              </button>
-              <div class="order1 nav-right-side ml-auto hide-on-phone">
-                  <div class="d-flex align-items-center after-border gap-12">
-                  <div class="d-flex align-items-center">
-                      <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
-                      <span class="font-weight-500 color-black whie-s-nowrap">(555) 802-1234</span>
-                  </div>
-                  <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block">
-                      <span class="responsive-fonts font-weight-500 free-quote-text whie-s-nowrap">
-                          Free Quote
-                      </span>
-                  </a>
-                     
-                  </div>
-                  
-              </div>
-            <div class="collapse navbar-collapse navLinks-responsive justify-content-center" id="navbarNavAltMarkup">
-              <ul class="navbar-nav">
-                <li class="position-relative nav-item navLinkHover mx-3">
-                    <a class="nav-item nav-link nav-links-margin active" href="#">
-                        <span class="nav-link-border"></span>
-                        <div class="d-flex align-items-center">
-                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Home</span>
-                            <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
-                        </div>
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <div class="hide-992 position-absolute nav-link-drop-down">
-                       <ul class="d-flex flex-column">
-                           <li class="nav-link-dropDrown-li bg-white"><a class="p-4 hover-c-primary responsive-fonts font-weight-500 color-black whie-s-nowrap d-block" href="#">Home Alternate</a></li>
-                       </ul>
-                    </div>
-                </li>
-                <li id="services-link" class="mx-3 position-static li nav-item navLinkHover">
-                <a class="position-relative nav-item nav-link nav-links-margin " href="#">
-                    <span class="nav-link-border"></span>
+            <button class="navbar-toggler order2 " type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="order1 nav-right-side ml-auto hide-on-phone">
+                <div class="d-flex align-items-center after-border gap-12">
                     <div class="d-flex align-items-center">
-                        <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Services</span>
-                        <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
+                        <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
+                        <span class="font-weight-500 color-black whie-s-nowrap">(555) 802-1234</span>
                     </div>
-                </a> 
-                <div class="bg-white container hide-992 primary-box-shadow position-absolute services-drop-down"> 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="mega-menu-card p-3">
-                                    <div class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
-                                        <i class="fa fa-eye"></i>
-                                    </div>
-                                    <div class="mega-menu-card-text">
-                                        <h3 class="menu-card-title my-3"><a href="#" class="color-black font-weight-500  hover-c-primary">Strategic Marketing Plan</a></h3>
-                                        <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor mattis scelerisque eu ut tortor.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4"><div class="mega-menu-card p-3">
-                                <div class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-pink c-pointer">
-                                    <i class="fa fa-eye"></i>
-                                </div>
-                                <div class="mega-menu-card-text">
-                                    <h3 class="menu-card-title my-3"><a href="#" class="color-black font-weight-500  hover-c-primary">Sales Development</a></h3>
-                                    <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor mattis scelerisque eu ut tortor.</p>
-                                </div>
-                            </div></div>
-                            <div class="col-md-4"><div class="mega-menu-card p-3">
-                                <div class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-green c-pointer">
-                                    <i class="fa fa-eye"></i>
-                                </div>
-                                <div class="mega-menu-card-text">
-                                    <h3 class="menu-card-title my-3"><a href="#" class="color-black font-weight-500  hover-c-primary">Digital Marketing</a></h3>
-                                    <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor mattis scelerisque eu ut tortor.</p>
-                                </div>
-                            </div></div>
-                        </div> 
-                 </div>
-            </li>
-            <li class="mx-3 li nav-item navLinkHover"> 
-                <a class="position-relative nav-item nav-link nav-links-margin " href="why-us.html" target="_blank"> 
-                    <span class="nav-link-border"></span>
-                    <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Why Us</span> 
-                </a>
-                </li>
-            <li class="hide-on-md mx-3 li nav-item navLinkHover">
+                    <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block">
+                        <span class="responsive-fonts font-weight-500 free-quote-text whie-s-nowrap">
+                            Free Quote
+                        </span>
+                    </a>
 
-                <a class="position-relative nav-item nav-link nav-links-margin " href="#"> 
-                    <span class="nav-link-border"></span>
-                    <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Case Studies</span> 
-                </a>
-                </li>
-            <li class="li nav-item navLinkHover mx-3">
+                </div>
 
-                <a class="position-relative navLinkHover nav-item nav-link nav-links-margin" href="#"> 
-                    <span class="nav-link-border"></span>
-                    <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">About </span> 
-                </a>
-                </li>
-            <li class="hide-on-md li nav-item navLinkHover">
-
-                <a class="position-relative nav-item nav-link nav-links-margin mx-3" href="#"> 
-                    <span class="nav-link-border"></span>
-                    <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Blog </span> 
-                </a>
-                </li>
-                 
-              </ul> 
             </div>
-          </nav> 
-          <header id="header" class="home-header pb-4">
-              <div class="container-fluid home-hero">
-                  <div class="row">
-                    <div class="col-md-7">  
-                  <div class="small-text-center">
-                    <h1 class="hero-heading font-weight-700 bigger-title text-white my-3">
-                        Unlock Your Online Growth Potential
-                      </h1>
-                      <h4 class="my-4 text-white">
-                        Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture
-                      </h4>
-                      <div class="my-lg-4 my-2">
-                          <a href="#" class="bg-white d-inline-block border-radius-10 py-3 color-black px-5 hiteBtn">
-                              <div class="d-flex align-items-center">
-                              <span class="mx-2">Our Services</span>
-                              <span><i class="fa fa-arrow-right"></i></span>
+            <div class="collapse navbar-collapse navLinks-responsive justify-content-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="position-relative nav-item navLinkHover mx-3">
+                        <a class="nav-item nav-link nav-links-margin active" href="#">
+                            <span class="nav-link-border"></span>
+                            <div class="d-flex align-items-center">
+                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Home</span>
+                                <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
                             </div>
-                          </a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="mx-auto contact-form bg-white primary-box-shadow">
-                        <div class="mx-auto" style="max-width: 110px;">
-                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg" width="100%" class="rounded-circle" alt="">
-                            </div>
-                            <h4 class="color-black my-2 text-center">Melissa Dean</h4>
-                        <p class="text-secondary text-center d-block">Marketing Consultant Expert
-                        </p>
-
-                        <div class="mx-auto border-radius-10 justify-content-center d-flex"> 
-                            <span class="color-primary mx-3"><i class="fa fa-phone" ></i></span>
-                            <h5 class="font-weight-500 color-primary whie-s-nowrap">(555) 802-1234</h5> 
-                        </div>
-                        <form>
-                            <div class="mt-3">
-                            <div class="form-input my-3">
-                                <input type="text" required class="input" placeholder="Your Name*">
-                            </div>
-                            <div class="form-input my-3">
-                                <input type="text" required class="input" placeholder="Your Email*">
-                            </div>
-                            <div class="form-input my-3">
-                                <input type="text" required class="input" placeholder="Your Phone Number*">
-                            </div>
-                            <div class="btn-c-primary my-3">
-                                <button type="button" class="w-100 primary-hovered border-radius-10 font-weight-500">
-                                    <span>Get a Callback</span>
-                                </button>
-                            </div>
-                            <div class="my-3">
-                                <small class="d-block text-center text-secondary">By submitting my data I agree to be contacted</small>
-                            </div>
-                        </div>
-                        </form>
-
-                            </div>
-                </div>
-            </div>
-              </div>
-           </header>
-
-           <section class="animSection">
-               <div class="container-fluid">
-                   <div class="row">
-                    <div class="col-md-7 ">
-                        <div class="animImg position-relative wow bounceInLeft">
-                          <div class="position-absolute anim-layer anim-layer-1 wow zoomIn" data-wow-duration="1.6s">
-                            
-                          </div>
-                          <div class="position-absolute anim-layer anim-layer-2 wow bounceInLeft" data-wow-duration="1.8s" ></div>
-                          <div data-wow-iteration="3" data-wow-duration="0.2" class="position-absolute anim-layer anim-layer-3 wow pulse" style="visibility: visible; animation-iteration-count: 3; animation-name: pulse;" ></div>
-                          <div class="position-absolute anim-layer anim-layer-4 wow bounceIn" data-wow-duration="1s" data-wow-delay=".7s"></div>
-                        </div>
-                    </div> 
-                <div class="col-md-5">
-                    <div class="hero-right col-right-margin animated wow fadeInRight"> 
-                        <div class="d-flex align-items-center">
-                            <div class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <h4 class="hover-c-primary mb-0 mx-3 font-weight-500">
-                                Business Growth
-                                </h4>
-                        </div>
-                        <h1 class="hero-heading big-title">
-                            Increase Brand Awareness
-                        </h1>
-                        <h3 class="my-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.
-                        </h3>
-                        <div class="btn-c-primary my-4">
-                            <button type="button" class="primary-hovered border-radius-10 font-weight-500">
-                                <span>Get a Consultation</span>
-                            </button>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-           </section>
-           <section class="animSection">
-               <div class="container-fluid">
-                   <div class="row">
-                   
-                <div class="col-md-5">
-                    <div class="hero-right col-left-margin animated wow fadeInRight"> 
-                        <div class="d-flex align-items-center">
-                            <div class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <h4 class="hover-c-primary mb-0 mx-3 font-weight-500">
-                                nvestors In People
-                                </h4>
-                        </div>
-                        <h1 class="hero-heading big-title">
-                            In-House Sales Training
-                        </h1>
-                        <h3 class="my-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.
-                        </h3>
-                        <div class="btn-c-primary my-4">
-                            <button type="button" class="primary-hovered border-radius-10 font-weight-500">
-                                <span>Get a Consultation</span>
-                            </button>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="animImg position-relative wow bounceInLeft">
-                      <div class="position-absolute anim-layer anim-layer-1 wow zoomIn" data-wow-duration="1.6s">
-                        
-                      </div>
-                      <div class="position-absolute anim-layer anim-layer-2 wow bounceInLeft" data-wow-duration="1.8s" ></div>
-                      <div data-wow-iteration="3" data-wow-duration="0.2" class="position-absolute anim-layer anim-layer-3 wow pulse" style="visibility: visible; animation-iteration-count: 3; animation-name: pulse;" ></div>
-                      <div class="position-absolute anim-layer anim-layer-4 wow bounceIn" data-wow-duration="1s" data-wow-delay=".7s"></div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-           </section>
-
-           <section class="animSection">
-            <div class="container-fluid">
-                <div class="row">
-                 <div class="col-md-7 ">
-                     <div class="animImg position-relative wow bounceInLeft">
-                       <div class="position-absolute anim-layer anim-layer-1 wow zoomIn" data-wow-duration="1.6s">
-                         
-                       </div>
-                       <div class="position-absolute anim-layer anim-layer-2 wow bounceInLeft" data-wow-duration="1.8s" ></div>
-                       <div data-wow-iteration="3" data-wow-duration="0.2" class="position-absolute anim-layer anim-layer-3 wow pulse" style="visibility: visible; animation-iteration-count: 3; animation-name: pulse;" ></div>
-                       <div class="position-absolute anim-layer anim-layer-4 wow bounceIn" data-wow-duration="1s" data-wow-delay=".7s"></div>
-                     </div>
-                 </div> 
-             <div class="col-md-5">
-                 <div class="hero-right col-right-margin animated wow fadeInRight"> 
-                     <div class="d-flex align-items-center">
-                         <div class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
-                             <i class="fa fa-eye"></i>
-                         </div>
-                         <h4 class="hover-c-primary mb-0 mx-3 font-weight-500">
-                            Social Media Analysis
-                             </h4>
-                     </div>
-                     <h1 class="hero-heading big-title">
-                        Harness Your Social Proof
-                     </h1>
-                     <h3 class="my-3">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.
-                     </h3>
-                     <div class="btn-c-primary my-4">
-                         <button type="button" class="primary-hovered border-radius-10 font-weight-500">
-                             <span>Get a Consultation</span>
-                         </button>
-                     </div>
-                     
-                 </div>
-             </div>
-         </div>
-     </div>
-        </section>
-    
-
-    <section class="grey-section">
-        <div class="container-fluid ">
-            <div class="md-w-60 mx-auto py-lg-5 py-md-4">
-                <h2 class="big-title font-weight-700 text-center">
-                    Let’s Work Together to Create Your Perfect Marketing Strategy
-                </h2>
-                <h3 class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus.
-                </h3>
-            </div>
-            <div class="row py-2 mx-lg-3 mx-md-3">
-                <div class="col-md-4">
-                        <div class="marketing-card p-md-4 p-lg-4 bg-white text-center">
-                            <h4 class="mb-3 md-title font-weight-700">         
-                                Advertising
-                            </h4>
-                            <p class="menu-card-title py-2">
-                                Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus.  
-                            </p>
-                            <span class="my-2 card-icon d-flex justify-content-center align-items-center bg-c-primary mx-auto">
-                                <i class="fa fa-play text-white"></i>
-                            </span>
-                            <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block my-4">
-                                <span class="responsive-fonts font-weight-500 free-quote-text px-3 whie-s-nowrap">
-                                    Learn more
-                                </span>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                        <div class="marketing-card p-md-4 p-lg-4 bg-white text-center">
-                            <h4 class="mb-3 md-title font-weight-700">         
-                                Performance
-                            </h4>
-                            <p class="menu-card-title py-2">
-                                Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus.  
-                            </p>
-                            <span class="my-2 card-icon d-flex justify-content-center align-items-center bg-c-primary mx-auto">
-                                <i class="fa fa-play text-white"></i>
-                            </span>
-                            <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block my-4">
-                                <span class="responsive-fonts font-weight-500 free-quote-text px-3 whie-s-nowrap">
-                                    Learn more
-                                </span>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                        <div class="marketing-card p-md-4 p-lg-4 bg-white text-center">
-                            <h4 class="mb-3 md-title font-weight-700">         
-                                Optimization
-                            </h4>
-                            <p class="menu-card-title py-2">
-                                Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus.  
-                            </p>
-                            <span class="my-2 card-icon d-flex justify-content-center align-items-center bg-c-primary mx-auto">
-                                <i class="fa fa-play text-white"></i>
-                            </span>
-                            <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block my-4">
-                                <span class="responsive-fonts font-weight-500 free-quote-text px-3 whie-s-nowrap">
-                                    Learn more
-                                </span>
-                            </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid ">
-            <div class="row py-lg-4 py-lg-4 py-2" style="padding-bottom: 50px !important">
-                <h4 class="md-title font-weight-700 text-center my-4">Awards</h4>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-6">
-                    <div class="awards-img mx-auto awards-img1">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" width="100%" alt="">
-                    </div>
-                    <div class="awards-text">
-                        <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-6">
-                    <div class="awards-img mx-auto awards-img2">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" width="100%" alt="">
-                    </div>
-                    <div class="awards-text">
-                        <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-6">
-                    <div class="awards-img mx-auto awards-img3">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" width="100%" alt="">
-                    </div>
-                    <div class="awards-text">
-                        <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-6 col-6">
-                    <div class="awards-img mx-auto awards-img4">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" width="100%" alt="">
-                    </div>
-                    <div class="awards-text">
-                        <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container-fluid">
-            <div class="row  align-items-center" style="padding-bottom: 6% !important; padding-top: 5%;">
-                <div class="col-md-7">
-                    <div class="col-img-spacing col-img-boxShadow">
-                    <div class="col-img">
-                        <img class="border-radius-10" src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/large-testimonial-2.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="col-text-spacing">
-                        <p class="small-text-center md-title font-weight-700 f-family-cursive mb-md-4">
-                            “The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.”
-                        </p>
-                        <strong class="small-text-center d-block responsive-fonts my-2">
-                            Andreas Casey
-                        </strong>
-                      <small class="text-secondary small-text-center d-block">Marketing Consultant Expert</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sticky-sec">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="sticky-row bg-white">
-                        <div class="sticky-row-img-sec">
-                            <div class="sticky-row-img">
-                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-expert-cta.png" width="100%" alt="">
-                            </div>
-                            <div class="mx-5">
-                                <h4 class="color-black">Sandy Reiff</h4>
-                                <small class="color-black">Marketing Consultant Expert</small>
-                            </div>
-                        </div>
-                        <div>    
-                            <h4 class="md-title font-weight-500 color-black text-center">Drive Leads and Sales with Avada
-                            </h4>
-                        </div>
-                        <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-flex max-w-fit"> 
-                                <span class="color-primary mx-3"><i class="fa fa-phone" ></i></span>
-                                <span class="font-weight-500 color-primary whie-s-nowrap">(555) 802-1234</span> 
+                            <span class="sr-only">(current)</span>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    <section>
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="md-w-60 mx-auto my-lg-5 my-md-4">
-                    <h2 class="mx-5 big-title font-weight-700 text-center">
-                        Harness The Power Of Social Media
-                    </h2>
-                  <h3 class="text-center my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus.
-                  </h3>
-                </div>
-                <div class="col-md-7">
-                    <div class="col-img-spacing ">
-                    <div class="col-img p-md-5 p-lg-5">
-                        <img class="border-radius-10" src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/equip-leaders-from-strategy.png" width="100%" alt="">
-                    </div>
-                </div>
-                </div>
-                <div class="col-md-5">
-                    <div id="accordion">
-                        <div class="mb-3">
-                          <div class="p-3" id="headingOne">
-                            <h5 class="mb-0">
-                              <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <div class="collapBtn d-flex align-items-center c-pointer">
-                                    <i id="plus1" class="plus-minus-icon color-primary fa fa-plus"></i>
-                                    <h4 class="w-100 hover-c-primary md-title my-0 collap-title-margin color-black">Customer Service</h4>
+                        <div class="hide-992 position-absolute nav-link-drop-down">
+                            <ul class="d-flex flex-column">
+                                <li class="nav-link-dropDrown-li bg-white"><a
+                                        class="p-4 hover-c-primary responsive-fonts font-weight-500 color-black whie-s-nowrap d-block"
+                                        href="#">Home Alternate</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="services-link" class="mx-3 position-static li nav-item navLinkHover">
+                        <a class="position-relative nav-item nav-link nav-links-margin " href="#">
+                            <span class="nav-link-border"></span>
+                            <div class="d-flex align-items-center">
+                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Services</span>
+                                <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
+                            </div>
+                        </a>
+                        <div
+                            class="bg-white container hide-992 primary-box-shadow position-absolute services-drop-down">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mega-menu-card p-3">
+                                        <div
+                                            class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
+                                            <i class="fa fa-eye"></i>
+                                        </div>
+                                        <div class="mega-menu-card-text">
+                                            <h3 class="menu-card-title my-3"><a href="#"
+                                                    class="color-black font-weight-500  hover-c-primary">Strategic
+                                                    Marketing Plan</a></h3>
+                                            <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
+                                                mattis scelerisque eu ut tortor.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapser collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body mt-3">
-                              <p class="responsive-fonts line-height-1-6">
-                                Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                              </p>
-                              <p class="mt-3 responsive-fonts line-height-1-6">
-                                Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <div class="p-3" id="headingTwo">
-                            <h5 class="mb-0">
-                              <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div class="collapBtn d-flex align-items-center c-pointer">
-                                    <i class="plus-minus-icon color-primary  fa fa-plus"></i>
-                                    <h4 class="w-100 hover-c-primary md-title my-0 collap-title-margin color-black">Online Consultation</h4>
+                                <div class="col-md-4">
+                                    <div class="mega-menu-card p-3">
+                                        <div
+                                            class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-pink c-pointer">
+                                            <i class="fa fa-eye"></i>
+                                        </div>
+                                        <div class="mega-menu-card-text">
+                                            <h3 class="menu-card-title my-3"><a href="#"
+                                                    class="color-black font-weight-500  hover-c-primary">Sales
+                                                    Development</a></h3>
+                                            <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
+                                                mattis scelerisque eu ut tortor.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapser collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body mt-3">
-                                <p class="responsive-fonts line-height-1-6">
-                                  Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                                </p>
-                                <p class="mt-3 responsive-fonts line-height-1-6">
-                                  Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                                </p>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <div class="p-3" id="headingThree">
-                            <h5 class="mb-0">
-                              <div  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <div class="collapBtn  d-flex align-items-center c-pointer">
-                                    <i class="plus-minus-icon color-primary  fa fa-plus"></i>
-                                    <h4 class="w-100 hover-c-primary md-title my-0 collap-title-margin color-black">Sales Mnagement</h4>
-                                </div>
-                              </div>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapser collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body mt-3">
-                                <p class="responsive-fonts line-height-1-6">
-                                  Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                                </p>
-                                <p class="mt-3 responsive-fonts line-height-1-6">
-                                  Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                                </p>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-md-5 py-lg-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 my-3">
-                    <div class="twoCards-card">
-                        <h4 class="text-center mb-3 md-title font-weight-700">Grow your traffic</h4>
-                        <p class="font-20px text-center menu-card-title py-2">
-                            Nullam et cursus neque, eget fringilla dolor, curabitur ac leo nunc. Vestibulum et mauris vel ante finibus.
-                        </p>
-                        <div class="towCards-card-img border-radius-10 bg-white">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/traffic-card.png" width="100%" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 my-3">
-                    <div class="twoCards-card">
-                        <h4 class="text-center mb-3 md-title font-weight-700">Increase your sales
-                        </h4>
-                        <p class="font-20px text-center menu-card-title py-2">
-                            Nullam et cursus neque, eget fringilla dolor, curabitur ac leo nunc. Vestibulum et mauris vel ante finibus.
-                        </p>
-                        <div class="towCards-card-img border-radius-10 bg-white">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/traffic-card.png" width="100%" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="collapse-section">
-        <div class="container">
-            <div class="row">
-                <div id="accordion">
-                    <div class="mb-3">
-                      <div class="p-3" id="collapH1">
-                        <h5 class="mb-0">
-                          <div data-toggle="collapse" data-target="#col-collapseOne" aria-expanded="true" aria-controls="col-collapseOne">
-                            <div class="collapBtn d-flex align-items-center c-pointer"> 
-                                <h4 class="w-100 hover-c-primary md-title my-0   color-black">Vivamus id ante vel purus commodo cursus? Nunc sit amet cursus massa?</h4>
-                                <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
-                            </div>
-                          </div>
-                        </h5>
-                      </div>
-                  
-                      <div id="col-collapseOne" class="collapser collapse" aria-labelledby="collapH1" data-parent="#accordion">
-                        <div class="card-body mt-3">
-                          <p class="responsive-fonts line-height-1-6">
-                            Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                          </p>
-                          <p class="mt-3 responsive-fonts line-height-1-6">
-                            Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <div class="p-3" id="collapH2">
-                          <h5 class="mb-0">
-                            <div data-toggle="collapse" data-target="#col-collapseTwo" aria-expanded="true" aria-controls="col-collapseTwo">
-                              <div class="collapBtn d-flex align-items-center c-pointer"> 
-                                  <h4 class="w-100 hover-c-primary md-title my-0 color-black">Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet?</h4>
-                                  <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
-                              </div>
-                            </div>
-                          </h5>
-                        </div>
-                    
-                        <div id="col-collapseTwo" class="collapser collapse" aria-labelledby="collapH2" data-parent="#accordion">
-                          <div class="card-body mt-3">
-                            <p class="responsive-fonts line-height-1-6">
-                              Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                            </p>
-                            <p class="mt-3 responsive-fonts line-height-1-6">
-                              Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="mb-3">
-                        <div class="p-3" id="collapH3">
-                          <h5 class="mb-0">
-                            <div data-toggle="collapse" data-target="#col-collapseThree" aria-expanded="true" aria-controls="col-collapseThree">
-                              <div class="collapBtn d-flex align-items-center c-pointer"> 
-                                  <h4 class="w-100 hover-c-primary md-title my-0 color-black">Duis vel risus egestas, viverra enim sed, pretium velit?</h4>
-                                  <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
-                              </div>
-                            </div>
-                          </h5>
-                        </div>
-                    
-                        <div id="col-collapseThree" class="collapser collapse " aria-labelledby="collapH3" data-parent="#accordion">
-                          <div class="card-body mt-3">
-                            <p class="responsive-fonts line-height-1-6">
-                              Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                            </p>
-                            <p class="mt-3 responsive-fonts line-height-1-6">
-                              Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="mb-3">
-                        <div class="p-3" id="collapH4">
-                          <h5 class="mb-0">
-                            <div data-toggle="collapse" data-target="#col-collapseFour" aria-expanded="true" aria-controls="col-collapseFour">
-                              <div class="collapBtn d-flex align-items-center c-pointer"> 
-                                  <h4 class="w-100 hover-c-primary md-title my-0  color-black">Curabitur ornare felis sit amet neque volutpat, porta lobortis elit rutrum?</h4>
-                                  <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
-                              </div>
-                            </div>
-                          </h5>
-                        </div>
-                    
-                        <div id="col-collapseFour" class="collapser collapse " aria-labelledby="collapH4" data-parent="#accordion">
-                          <div class="card-body mt-3">
-                            <p class="responsive-fonts line-height-1-6">
-                              Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id convallis. Sed pellentesque erat non eu auctor tortor, sit amet egestas purus.
-                            </p>
-                            <p class="mt-3 responsive-fonts line-height-1-6">
-                              Sed tincidunt tempor leo, vitae consequat lorem ornare ultricies. Nullam fringilla ultricies pharetra.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-
-                  </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grey-section">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="mx-5 big-title font-weight-700">
-                        Learn How We Have Helped Leading Organizations
-                    </h2>
-                </div>
-                <div class="col-md-6">
-                    <div class="btn-c-primary my-4 text-right">
-                        <button type="button" class="primary-hovered border-radius-10 font-weight-500">
-                            <span>Read More Case Studies</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="help-card">
-                        <div class="help-card-img position-relative">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-1.jpg" width="100%" alt="">
-                         
-                                <a  class="hlp-card-overlay" href="#"></a>
-                            
-                        </div>
-                        <div class="my-md-4 my-lg-4 help-card-link">
-                            <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
-                                How Spaces attracted five million visitors by improving the content
-                            </a>
-                        </div>
-                        <div class="help-card-footer py-md-4 py-lg-4">
-                            <p class="big-title">
-                                200%
-                            </p>
-                            <p class="py-3 font-20px">
-                                Higher revenue from digital
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="help-card">
-                        <div class="help-card-img position-relative">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg" width="100%" alt="">
-                         
-                                <a  class="hlp-card-overlay" href="#"></a>
-                            
-                        </div>
-                        <div class="my-md-4 my-lg-4 help-card-link">
-                            <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
-                                How Spaces attracted five million visitors by improving the content
-                            </a>
-                        </div>
-                        <div class="help-card-footer py-md-4 py-lg-4">
-                            <p class="big-title">
-                                10x
-                            </p>
-                            <p class="py-3 font-20px">
-                                Sales increase with the same ad spend
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="help-card">
-                        <div class="help-card-img position-relative">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg" width="100%" alt="">
-                         
-                                <a  class="hlp-card-overlay" href="#"></a>
-                            
-                        </div>
-                        <div class="my-md-4 my-lg-4 help-card-link">
-                            <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
-                                How Spaces attracted five million visitors by improving the content
-                            </a>
-                        </div>
-                        <div class="help-card-footer py-md-4 py-lg-4">
-                            <p class="big-title">
-                                3-year
-                            </p>
-                            <p class="py-3 font-20px">
-                                Partnership with Avada Consultant   
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                 
-            </div>
-        </div>
-    </section>
-
-    <section class="py-lg-5 py-md-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center md-w-60 mx-auto">
-                        <div class="mx-auto" style="max-width: 110px;">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/abstract.png" width="100%" alt="">
-                        </div>
-                        <h4 class="md-title color-black font-weight-700 hover-c-primary">“The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.”</h4>
-                        <div class="sticky-row-img mx-auto">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/small-testimonial.jpg" width="100%" alt="">
-                        </div>
-                        <h4 class="color-black my-2">Melissa Dean</h4>
-                        <p class="text-secondary small-text-center d-block">Marketing Consultant Expert
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="black-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="black-container">
-                        <div class="w-md-60 mx-md-4 mx-lg-5">
-                            <div>
-                                <h4 class="bigger-title text-white text-center">
-                                    Let’s Make Things Happen
-                                </h4>
-                            </div>
-                            <div class="mx-auto contact-form bg-white" id="blackForm-container">
-                        <div class="mx-auto" style="max-width: 110px;">
-                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg" width="100%" class="rounded-circle" alt="">
-                            </div>
-                            <h4 class="color-black my-2 text-center">Melissa Dean</h4>
-                        <p class="text-secondary text-center d-block">Marketing Consultant Expert
-                        </p>
-
-                        <div class="mx-auto border-radius-10 justify-content-center d-flex"> 
-                            <span class="color-primary mx-3"><i class="fa fa-phone" ></i></span>
-                            <h5 class="font-weight-500 color-primary whie-s-nowrap">(555) 802-1234</h5> 
-                        </div>
-                        <form>
-                            <div class="mt-3">
-                            <div class="form-input my-3">
-                                <input type="text" required class="input" placeholder="Your Name*">
-                            </div>
-                            <div class="form-input my-3">
-                                <input type="text" required class="input" placeholder="Your Email*">
-                            </div>
-                            <div class="form-input my-3">
-                                <input type="text" required class="input" placeholder="Your Phone Number*">
-                            </div>
-                            <div class="btn-c-primary my-3">
-                                <button type="button" class="w-100 primary-hovered border-radius-10 font-weight-500">
-                                    <span>Get a Callback</span>
-                                </button>
-                            </div>
-                            <div class="my-3">
-                                <small class="d-block text-center text-secondary">By submitting my data I agree to be contacted</small>
-                            </div>
-                        </div>
-                        </form>
-
-                            </div>
-                            <div class="owl-carousel blackCarousel my-4 ">
-                                <div class="carouselItem max-w-200px mx-auto">
-                                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/abstract.png" width="100%" alt="Lorem">
-                                </div>
-                               
-                                
-                                <div class="carouselItem max-w-200px mx-auto">
-                                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/digitalbox.png" width="100%" alt="Lorem">
-                                </div>
-                                 
-                                <div class="carouselItem max-w-200px mx-auto">
-                                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/next.png" width="100%" alt="Lorem">
-                                </div>
-                                <div class="carouselItem max-w-200px mx-auto">
-                                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png" width="100%" alt="Lorem">
+                                <div class="col-md-4">
+                                    <div class="mega-menu-card p-3">
+                                        <div
+                                            class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-green c-pointer">
+                                            <i class="fa fa-eye"></i>
+                                        </div>
+                                        <div class="mega-menu-card-text">
+                                            <h3 class="menu-card-title my-3"><a href="#"
+                                                    class="color-black font-weight-500  hover-c-primary">Digital
+                                                    Marketing</a></h3>
+                                            <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
+                                                mattis scelerisque eu ut tortor.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </li>
+                    <li class="mx-3 li nav-item navLinkHover">
+                        <a class="position-relative nav-item nav-link nav-links-margin " href="why-us.html"
+                            target="_blank">
+                            <span class="nav-link-border"></span>
+                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Why Us</span>
+                        </a>
+                    </li>
+                    <li class="hide-on-md mx-3 li nav-item navLinkHover">
 
-    <footer class="footer" id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                
-        <div class="col-md-5">
-            <div class="p-3 footer-f-column">
-                <h4 class="md-title">
-                    Grow Your Online Business Strategically, and Improve Customer Retention.
-                </h4>
-                <ul class="d-flex align-items-center justify-content-between social-icons">
-                    <li><a href="#">
-                        <i class="font-20px fab fa-facebook-f color-black"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i class="font-20px fab fa-twitter color-black"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i class="font-20px fab fa-instagram color-black"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i class="font-20px fab fa-youtube color-black"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i class="font-20px fab fa-linkedin color-black"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i class="font-20px fab fa-tiktok color-black"></i>
-                    </a></li>
+                        <a class="position-relative nav-item nav-link nav-links-margin " href="#">
+                            <span class="nav-link-border"></span>
+                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Case
+                                Studies</span>
+                        </a>
+                    </li>
+                    <li class="li nav-item navLinkHover mx-3">
+
+                        <a class="position-relative navLinkHover nav-item nav-link nav-links-margin" href="#">
+                            <span class="nav-link-border"></span>
+                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">About </span>
+                        </a>
+                    </li>
+                    <li class="hide-on-md li nav-item navLinkHover">
+
+                        <a class="position-relative nav-item nav-link nav-links-margin mx-3" href="#">
+                            <span class="nav-link-border"></span>
+                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Blog </span>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
-        </div>
-        <div class="col-md-7">
-            <div class="row">
-                <div class="col-md-4">
-                   <ul class="d-flex flex-column">
-                       <li> <h4 class="color-black my-2">
-                        Services
-                    </h4></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Marketing Plan
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Sales Development
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Digital Marketing
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Pricing
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Marketing Plan
-                       </a></li>
-                       <li> <a href="file:///C:/Users/Abid/Desktop/mario-nanni/why-us.html" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Why Us
-                       </a></li>
-                       <li> <p class="responsive-fonts">
-                        Case Studies
-                       </a></li>
-                   </ul>
-                </div>
-                <div class="col-md-4">
-                   <ul class="d-flex flex-column">
-                       <li> <h4 class="color-black my-2">
-                        Resources
-                    </h4></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Learning Center
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Video Tutorials
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Customers
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Blog
-                       </a></li>
-                        
-                   </ul>
-                </div>
-                <div class="col-md-4">
-                   <ul class="d-flex flex-column">
-                       <li> <h4 class="color-black my-2">
-                        Company
-                    </h4></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Who We Are
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Contact Us
-                       </a></li>
-                       <li> <a href="#" class="font-20px hover-c-primary color-black my-2 d-block footer-link">
-                        Careers
-                       </a></li>
-                        
-                        
-                   </ul>
-                </div>
-                 
-            </div>
-        </div>
-        
-    </div>
-</div>
-<div class="footer-end">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-5"><strong>&copy;2021 • Avada Consultant • Powered by WordPress</strong></div>
-            <div class="col-md-7">
+        </nav>
+        <header id="header" class="home-header pb-4">
+            <div class="container-fluid home-hero max-wrapper">
                 <div class="row">
-                    <div class="col-md-6"><strong>Call Us (555) 802-1234</strong></div>
-            <div class="col-md-6 text-right-md"><strong>info@yourcompany.com
+                    <div class="col-md-7">
+                        <div class="small-text-center">
+                            <h1 class="hero-heading font-weight-700 bigger-title text-white my-3">
+                                Unlock Your Online Growth Potential
+                            </h1>
+                            <h4 class="my-4 text-white">
+                                Online marketing to secure customer retention, leads, and sales. We focus on the bigger
+                                picture
+                            </h4>
+                            <div class="my-lg-4 my-2">
+                                <a href="#"
+                                    class="bg-white d-inline-block border-radius-10 py-3 color-black px-5 hiteBtn">
+                                    <div class="d-flex align-items-center">
+                                        <span class="mx-2">Our Services</span>
+                                        <span><i class="fa fa-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mx-auto contact-form bg-white primary-box-shadow">
+                            <div class="mx-auto" style="max-width: 110px;">
+                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg"
+                                    width="100%" class="rounded-circle" alt="">
+                            </div>
+                            <h4 class="color-black my-2 text-center">Melissa Dean</h4>
+                            <p class="text-secondary text-center d-block">Marketing Consultant Expert
+                            </p>
 
-            </strong></div>
+                            <div class="mx-auto border-radius-10 justify-content-center d-flex">
+                                <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
+                                <h5 class="font-weight-500 color-primary whie-s-nowrap">(555) 802-1234</h5>
+                            </div>
+                            <form>
+                                <div class="mt-3">
+                                    <div class="form-input my-3">
+                                        <input type="text" required class="input" placeholder="Your Name*">
+                                    </div>
+                                    <div class="form-input my-3">
+                                        <input type="text" required class="input" placeholder="Your Email*">
+                                    </div>
+                                    <div class="form-input my-3">
+                                        <input type="text" required class="input" placeholder="Your Phone Number*">
+                                    </div>
+                                    <div class="btn-c-primary my-3">
+                                        <button type="button"
+                                            class="w-100 primary-hovered border-radius-10 font-weight-500">
+                                            <span>Get a Callback</span>
+                                        </button>
+                                    </div>
+                                    <div class="my-3">
+                                        <small class="d-block text-center text-secondary">By submitting my data I agree
+                                            to be contacted</small>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-    </footer>
+        </header>
+
+        <section class="animSection max-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <div class="animImg position-relative wow bounceInLeft">
+                            <div class="position-absolute anim-layer anim-layer-1 wow zoomIn" data-wow-duration="1.6s">
+                                <img src="images/anim1.png" width="100%" alt="">
+                            </div>
+                            <div class="position-absolute anim-layer anim-layer-2 wow bounceInLeft"
+                                data-wow-duration="1.8s">
+                                <img src="images/anim2.png" width="100%" alt="">
+                            </div>
+                            <div data-wow-iteration="1" data-wow-duration="0.6"
+                                class="position-absolute anim-layer anim-layer-3  wow bounceIn">
+                                <img src="images/anim3.png" width="100%" alt="">
+                            </div>
+                            <div class="position-absolute anim-layer anim-layer-4 wow bounceIn" data-wow-iteration="4"
+                                data-wow-duration=".3s" data-wow-delay=".2s"
+                                style="visibility: visible; animation-iteration-count: 3; animation-name: pulse;">
+                                <img src="images/boy.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="hero-right col-right-margin animated wow fadeInRight">
+                            <div class="d-flex align-items-center">
+                                <div
+                                    class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <h4 class="hover-c-primary mb-0 mx-3 font-weight-500">
+                                    Business Growth
+                                </h4>
+                            </div>
+                            <h1 class="hero-heading big-title">
+                                Increase Brand Awareness
+                            </h1>
+                            <h3 class="my-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus.
+                                Nullam sit amet ante sed orci convallis gravida et at massa.
+                            </h3>
+                            <div class="btn-c-primary my-4">
+                                <button type="button" class="primary-hovered border-radius-10 font-weight-500">
+                                    <span>Get a Consultation</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="animSection max-wrapper">
+            <div class="container-fluid">
+                <div class="row reverseRow-small">
+
+                    <div class="col-md-5">
+                        <div class="hero-right col-left-margin animated wow fadeInRight">
+                            <div class="d-flex align-items-center">
+                                <div
+                                    class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <h4 class="hover-c-primary mb-0 mx-3 font-weight-500">
+                                    nvestors In People
+                                </h4>
+                            </div>
+                            <h1 class="hero-heading big-title">
+                                In-House Sales Training
+                            </h1>
+                            <h3 class="my-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus.
+                                Nullam sit amet ante sed orci convallis gravida et at massa.
+                            </h3>
+                            <div class="btn-c-primary my-4">
+                                <button type="button" class="primary-hovered border-radius-10 font-weight-500">
+                                    <span>Get a Consultation</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="animImg position-relative wow bounceInRight">
+                            <div class="position-absolute anim-layer anim-layer-1 wow zoomIn" data-wow-duration="1.6s">
+                                <img src="images/anim1.png" width="100%" alt="">
+                            </div>
+                            <div class="position-absolute anim-layer anim-layer-2 wow bounceInRight"
+                                data-wow-duration="1.8s">
+                                <img src="images/anim2.png" width="100%" alt="">
+                            </div>
+                            <div data-wow-iteration="1" data-wow-duration="0.6"
+                                class="position-absolute anim-layer anim-layer-3  wow bounceIn">
+                                <img src="images/anim3.png" width="100%" alt="">
+                            </div>
+                            <div class="position-absolute anim-layer anim-layer-4 wow bounceIn" data-wow-iteration="4"
+                                data-wow-duration=".3s" data-wow-delay=".2s"
+                                style="visibility: visible; animation-iteration-count: 3; animation-name: pulse;">
+                                <img src="images/boy.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="animSection max-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <div class="animImg position-relative wow bounceInLeft">
+                            <div class="position-absolute anim-layer anim-layer-1 wow zoomIn" data-wow-duration="1.6s">
+                                <img src="images/anim1.png" width="100%" alt="">
+                            </div>
+                            <div class="position-absolute anim-layer anim-layer-2 wow bounceInLeft"
+                                data-wow-duration="1.8s">
+                                <img src="images/anim2.png" width="100%" alt="">
+                            </div>
+                            <div data-wow-iteration="1" data-wow-duration="0.6"
+                                class="position-absolute anim-layer anim-layer-3  wow bounceIn">
+                                <img src="images/anim3.png" width="100%" alt="">
+                            </div>
+                            <div class="position-absolute anim-layer anim-layer-4 wow bounceIn" data-wow-iteration="4"
+                                data-wow-duration=".3s" data-wow-delay=".2s"
+                                style="visibility: visible; animation-iteration-count: 3; animation-name: pulse;">
+                                <img src="images/boy.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="hero-right col-right-margin animated wow fadeInRight">
+                            <div class="d-flex align-items-center">
+                                <div
+                                    class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <h4 class="hover-c-primary mb-0 mx-3 font-weight-500">
+                                    Social Media Analysis
+                                </h4>
+                            </div>
+                            <h1 class="hero-heading big-title">
+                                Harness Your Social Proof
+                            </h1>
+                            <h3 class="my-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus.
+                                Nullam sit amet ante sed orci convallis gravida et at massa.
+                            </h3>
+                            <div class="btn-c-primary my-4">
+                                <button type="button" class="primary-hovered border-radius-10 font-weight-500">
+                                    <span>Get a Consultation</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="max-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-w-60 mx-auto py-lg-5 py-md-4">
+                            <h2 class="big-title font-weight-700 text-center">
+                                Some Brands We Work With
+                            </h2>
+                            <h3 class="text-center">
+                                Quisque aliquet, libero consequat elementum convallis.
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="d-flex align-items-center justify-content-center ">
+                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                        <img src="images/abstract.png" width="100%" alt="Lorem">
+                                    </div>
+                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                        <img src="images/cglobal.png" width="100%" alt="Lorem">
+                                    </div>
+                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                        <img src="images/digitalbox.png" width="100%" alt="Lorem">
+                                    </div>
+                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                        <img src="images/hemisferio.png" width="100%" alt="Lorem">
+                                    </div>
+                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                        <img src="images/next.png" width="100%" alt="Lorem">
+                                    </div>
+                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                        <img src="images/spaces.png" width="100%" alt="Lorem">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-wrapper py-md-4 py-lg-4 sticky-sec">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sticky-row bg-white">
+                            <div class="sticky-row-img-sec">
+                                <div class="sticky-row-img">
+                                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-expert-cta.png"
+                                        width="100%" alt="">
+                                </div>
+                                <div class="mx-5">
+                                    <h4 class="color-black">Sandy Reiff</h4>
+                                    <small class="color-black">Marketing Consultant Expert</small>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="md-title font-weight-500 color-black text-center">Drive Leads and Sales with
+                                    Avada
+                                </h4>
+                            </div>
+                            <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-flex max-w-fit">
+                                <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
+                                <span class="font-weight-500 color-primary whie-s-nowrap">(555) 802-1234</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-wrapper">
+            <div class="container-fluid">
+                <h2 class="text-center py-md-5 py-lg-5 py-2 big-title font-weight-700">
+                    Trusted by Leading Organisations
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="help-card">
+                            <div class="help-card-img position-relative">
+                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-1.jpg"
+                                    width="100%" alt="">
+
+                                <a class="hlp-card-overlay" href="#"></a>
+
+                            </div>
+                            <div class="my-md-4 my-lg-4 help-card-link">
+                                <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
+                                    How Spaces attracted five million visitors by improving the content
+                                </a>
+                            </div>
+                            <div class="help-card-footer py-md-4 py-lg-4">
+                                <p class="big-title">
+                                    200%
+                                </p>
+                                <p class="py-3 font-20px">
+                                    Higher revenue from digital
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="help-card">
+                            <div class="help-card-img position-relative">
+                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg"
+                                    width="100%" alt="">
+
+                                <a class="hlp-card-overlay" href="#"></a>
+
+                            </div>
+                            <div class="my-md-4 my-lg-4 help-card-link">
+                                <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
+                                    How Spaces attracted five million visitors by improving the content
+                                </a>
+                            </div>
+                            <div class="help-card-footer py-md-4 py-lg-4">
+                                <p class="big-title">
+                                    10x
+                                </p>
+                                <p class="py-3 font-20px">
+                                    Sales increase with the same ad spend
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="help-card">
+                            <div class="help-card-img position-relative">
+                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg"
+                                    width="100%" alt="">
+
+                                <a class="hlp-card-overlay" href="#"></a>
+
+                            </div>
+                            <div class="my-md-4 my-lg-4 help-card-link">
+                                <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
+                                    How Spaces attracted five million visitors by improving the content
+                                </a>
+                            </div>
+                            <div class="help-card-footer py-md-4 py-lg-4">
+                                <p class="big-title">
+                                    3-year
+                                </p>
+                                <p class="py-3 font-20px">
+                                    Partnership with Avada Consultant
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="py-md-5 py-lg-5 py-3">
+                <div class="btn-c-primary my-4 text-center">
+                    <button type="button" class="primary-hovered border-radius-10 font-weight-500">
+                        <span>Read More Case Studies</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="grey-section">
+            <div class="container-fluid  max-wrapper">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6">
+                        <div class="col-left-margin animated wow fadeInRight">
+                            <h1 class="hero-heading big-title">
+                                We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.
+                            </h1>
+                            <h3 class="my-3">
+                                Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet pellentesque
+                                sem neque eget.
+                            </h3>
+                            <div class="btn-c-primary my-4">
+                                <button type="button" class="primary-hovered border-radius-10 font-weight-500">
+                                    <span>Why Work With Us</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wow bounceInRight">
+                            <div class="meeting-img">
+                                <img class="border-radius-10" src="images/why-work.jpg" width="100%"
+                                    alt="Meeting image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center py-5">
+                    <div class="col-md-6">
+                        <div class="col-left-margin animated wow fadeInRight">
+                            <div class="my-4">
+                                <h3 class="font-weight-700">We Build Relationships</h3>
+                                <h5 class="my-2 line-height-1-6">
+                                    Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo.
+                                    Integer consectetur.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="my-5 col-left-margin animated wow fadeInRight">
+                            <div class="my-4">
+                                <h3 class="font-weight-700">Proprietary Processes</h3>
+                                <h5 class="my-2 line-height-1-6">
+                                    Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo.
+                                    Integer consectetur
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-5 weBuild-icons-text d-flex align-items-center">
+                            <div class="weBuild-icon-container">
+                                <div class="weBuild-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="hover-c-primary">Accountability </h3>
+                                <h5 class="mt-3">
+                                    Curabitur ac leo nunc vestibulum
+
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="mb-5 weBuild-icons-text d-flex align-items-center">
+                            <div class="weBuild-icon-container">
+                                <div class="weBuild-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="hover-c-primary">Transparency </h3>
+                                <h5 class="mt-3">
+                                    Curabitur ac leo nunc vestibulum
+
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="mb-5 weBuild-icons-text d-flex align-items-center">
+                            <div class="weBuild-icon-container">
+                                <div class="weBuild-icon">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="hover-c-primary">Investment </h3>
+                                <h5 class="mt-3">
+                                    Curabitur ac leo nunc vestibulum
+
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid max-wrapper">
+                <div class="row py-lg-4 py-lg-4 py-2" style="padding-bottom: 50px !important">
+                    <h4 class="md-title font-weight-700 text-center my-4">Awards</h4>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-6">
+                        <div class="awards-img mx-auto awards-img1">
+                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="awards-text">
+                            <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-6">
+                        <div class="awards-img mx-auto awards-img2">
+                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="awards-text">
+                            <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-6">
+                        <div class="awards-img mx-auto awards-img3">
+                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="awards-text">
+                            <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-6">
+                        <div class="awards-img mx-auto awards-img4">
+                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="awards-text">
+                            <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-wrapper">
+            <div class="container-fluid">
+                <div class="row  align-items-center" style="padding-bottom: 6% !important; padding-top: 5%;">
+                    <div class="col-md-7">
+                        <div class="col-img-spacing col-img-boxShadow">
+                            <div class="col-img">
+                                <img class="border-radius-10" src="images/glasses-girl.jpg" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="col-text-spacing">
+                            <p class="small-text-center md-title font-weight-700 f-family-cursive mb-md-4">
+                                “The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential
+                                online and offline. We have experienced year on year growth due to their progressive
+                                approach.”
+                            </p>
+                            <strong class="small-text-center d-block responsive-fonts my-2">
+                                Andreas Casey
+                            </strong>
+                            <small class="text-secondary small-text-center d-block">Marketing Consultant Expert</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="grey-section">
+            <div class="container-fluid max-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="mx-5 big-title font-weight-700">
+                            Marketing Resources: Insider Advice on How to Increase Online Sales
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-c-primary my-4 text-right">
+                            <button type="button" class="primary-hovered border-radius-10 font-weight-500">
+                                <span>Explore All Resources</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="help-card">
+                            <div class="help-card-img position-relative">
+                                <img src="images/laptop.jpg" width="100%" alt="">
+
+                                <a class="hlp-card-overlay" href="#"></a>
+
+                            </div>
+                            <div class="my-md-4 my-lg-4 help-card-link">
+                                <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
+                                    Marketing Tips And Tricks For Your Website
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="help-card">
+                            <div class="help-card-img position-relative">
+                                <img src="images/blog-posts-5.jpg" width="100%" alt="">
+
+                                <a class="hlp-card-overlay" href="#"></a>
+
+                            </div>
+                            <div class="my-md-4 my-lg-4 help-card-link">
+                                <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
+                                    How to Write Stunning Blog Post Titles
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="help-card">
+                            <div class="help-card-img position-relative">
+                                <img src="images/blog-posts-4.jpg" width="100%" alt="">
+
+                                <a class="hlp-card-overlay" href="#"></a>
+
+                            </div>
+                            <div class="my-md-4 my-lg-4 help-card-link">
+                                <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
+                                    Techniques to Reduce Facebook Ads Spend
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="black-section black-container">
+            <div class="container-fluid max-wrapper">
+                <div class="row">
+                    <div class="col-md-5">
+
+                        <h4 class="bigger-title text-white">
+                            Let’s Make Things Happen
+                        </h4>
+                        <h5 class="my-3 text-white font-30 line-height-1-6">
+                            Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer
+                            consectetur.
+                        </h5>
+                        <div class="my-4 lightBlackBorder">
+
+                        </div>
+                        <div class="my-4">
+                            <p>
+                                <em class="text-white font-20px">“The team at Avada Marketing Consultant is fabulous.
+                                    They helped us unlock our potential online and offline. We have experienced year on
+                                    year growth due to their progressive approach.”</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="mx-auto contact-form bg-white" id="blackForm-container">
+                            <div class="mx-auto" style="max-width: 110px;">
+                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg"
+                                    width="100%" class="rounded-circle" alt="">
+                            </div>
+                            <h4 class="color-black my-2 text-center">Melissa Dean</h4>
+                            <p class="text-secondary text-center d-block">Marketing Consultant Expert
+                            </p>
+
+                            <div class="mx-auto border-radius-10 justify-content-center d-flex">
+                                <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
+                                <h5 class="font-weight-500 color-primary whie-s-nowrap">(555) 802-1234</h5>
+                            </div>
+                            <form>
+                                <div class="mt-3">
+                                    <div class="form-input my-3">
+                                        <input type="text" required class="input" placeholder="Your Name*">
+                                    </div>
+                                    <div class="form-input my-3">
+                                        <input type="text" required class="input" placeholder="Your Email*">
+                                    </div>
+                                    <div class="form-input my-3">
+                                        <input type="text" required class="input" placeholder="Your Phone Number*">
+                                    </div>
+                                    <div class="btn-c-primary my-3">
+                                        <button type="button"
+                                            class="w-100 primary-hovered border-radius-10 font-weight-500">
+                                            <span>Get a Callback</span>
+                                        </button>
+                                    </div>
+                                    <div class="my-3">
+                                        <small class="d-block text-center text-secondary">By submitting my data I agree
+                                            to be contacted</small>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-5">
+                        <div class="p-3 footer-f-column">
+                            <h4 class="md-title">
+                                Grow Your Online Business Strategically, and Improve Customer Retention.
+                            </h4>
+                            <ul class="d-flex align-items-center justify-content-between social-icons">
+                                <li><a href="#">
+                                        <i class="font-20px fab fa-facebook-f color-black"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="font-20px fab fa-twitter color-black"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="font-20px fab fa-instagram color-black"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="font-20px fab fa-youtube color-black"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="font-20px fab fa-linkedin color-black"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="font-20px fab fa-tiktok color-black"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <h4 class="color-black my-2">
+                                            Services
+                                        </h4>
+                                    </li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Marketing Plan
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Sales Development
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Digital Marketing
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Pricing
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Marketing Plan
+                                        </a></li>
+                                    <li> <a href="why-us.html"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Why Us
+                                        </a></li>
+                                    <li>
+                                        <p class="responsive-fonts">
+                                            Case Studies
+                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <h4 class="color-black my-2">
+                                            Resources
+                                        </h4>
+                                    </li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Learning Center
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Video Tutorials
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Customers
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Blog
+                                        </a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <h4 class="color-black my-2">
+                                            Company
+                                        </h4>
+                                    </li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Who We Are
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Contact Us
+                                        </a></li>
+                                    <li> <a href="#"
+                                            class="font-20px hover-c-primary color-black my-2 d-block footer-link">
+                                            Careers
+                                        </a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5"><strong>&copy;2021 • Avada Consultant • Powered by WordPress</strong>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6"><strong>Call Us (555) 802-1234</strong></div>
+                                <div class="col-md-6 text-right-md"><strong>info@yourcompany.com
+
+                                    </strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
     <!-- bootstrap JavaScript Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!-- owl carousel -->
     <script src="owlCarousel/jquery.min.js"></script>
-<script src="owlCarousel/owl.carousel.min.js"></script>
+    <script src="owlCarousel/owl.carousel.min.js"></script>
     <!-- wow js -->
 
     <script src="js/wow.min.js"></script>
 
-<script> 
-              new WOW().init();
-    
-    let plusIcon = true;
-    const collapBtn = document.querySelectorAll('.collapBtn');
-    const pM = document.querySelectorAll('.plus-minus-icon'); 
-    
-    collapBtn.forEach((colBtn, idx) =>{ 
-        colBtn.addEventListener('click', () =>{
-            //   plusIcon ? 
-            pM.forEach((icon, idx1) =>{   
-                
-                idx === idx1 && (plusIcon = !plusIcon); 
-                if(idx === idx1 && !plusIcon){ 
-                    console.log(plusIcon);
-                    icon.classList.add("fa-minus");
-                    icon.classList.remove("fa-plus") 
+    <script>
+        new WOW().init();
+
+
+
+        $(document).ready(function () {
+
+
+
+
+            const responSive = {
+                0: {
+                    items: 2,
+                    dots: true,
+
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 5,
                 }
-                else if(idx === idx1 && plusIcon && icon.classList.contains("fa-plus")){ 
-                    console.log(plusIcon);
-                    icon.classList.add("fa-minus");
-                    icon.classList.remove("fa-plus")
-                }
-                else if(idx === idx1 && plusIcon){
-                    icon.classList.remove("fa-minus");
-                    icon.classList.add("fa-plus")
-                }     
-                
-
-                // idx === idx1 &&  plusIcon ? 
-                // (
-                //     icon.classList.add("fa-minus"),
-                //     icon.classList.remove("fa-plus")   
-                // ) 
-                //     : 
-                // (
-                //     icon.classList.remove("fa-minus"), 
-                //     icon.classList.add("fa-plus")  
-                //  )
-
-            })  
-             
-        })
-
-        
-    })
-    
-
-    // pM.forEach(btn => btn.classList.add("fa-plus"));
-    //  collapBtn.forEach(btn => btn.addEventListener('click', () =>{
-    //     plusIcon = !plusIcon;  
-    //  pM.forEach((btn, idx1) => {
-    //      btn.classList.toggle("fa-plus")});
-    //  collapBtn.forEach((abc, idx2) => {
-    //  abc.addEventListener('click', () =>{  
- 
-    //  pM.forEach((btn, lastIdx) => { 
-    //      console.log(lastIdx);
-    //     btn.classList.add("fa-minus")});
-    //  })})
-    // })) 
-    
-    $(document).ready(function(){
-        
-        const responSive = {
-        0:{
-            items:2, 
-            dots: true, 
-
-        },
-        600:{
-            items:3, 
-        },
-        1000:{
-            items:5,  
-        }
-    } 
-
-      
-      
-        $(".owl-carousel").owlCarousel({
-         loop: true, 
-         items: 5,
-         responsiveClass:true,
-         responsive: responSive
-    });
+            }
 
 
-    });
-</script>
+
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                items: 5,
+                responsiveClass: true,
+                responsive: responSive
+            });
+
+
+        });
+    </script>
 </body>
+
 </html>
