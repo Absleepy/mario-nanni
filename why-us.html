@@ -45,26 +45,28 @@
 <body>
 
     <div class="wrapper">
-        <nav data-wow-duration=".7s" data-wow-delay=".01s"
-            class="wow fadeInDown container-fluid  bg-white navbar sticky-top navbar-light navbar-expand-lg py-0 justifyCenter-on-big py-lg-4 py-md-4 py-2 px-3 ">
-            <div class="max-wrapper d-flex w-100 align-items-center justify-content-between">
-                <strong id="logo">
+        <div class="bg-white sticky-top">
+            <nav data-wow-duration=".7s" data-wow-delay=".01s"
+                class="wow fadeInDown container-fluid  bg-white navbar  navbar-light navbar-expand-lg py-0 justifyCenter-on-big py-lg-4 py-md-4 py-2 px-3 max-wrapper">
+
+                <strong id=" logo">
                     <a class="navbar-brand d-block" href="#">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/avada-marketing-logo-2x.png"
-                            class="logo" width="100%" alt="Logo">
+                        <img src="images/avada-marketing-logo-2x.png" class="logo" width="100%" alt="Logo">
                     </a>
                 </strong>
 
                 <button class="navbar-toggler order2 " type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
+                    <span>Menu</span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="order1 nav-right-side ml-auto hide-on-phone">
                     <div class="d-flex align-items-center after-border gap-12">
                         <div class="d-flex align-items-center">
                             <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
-                            <span class="font-weight-500 color-black whie-s-nowrap">(555) 802-1234</span>
+                            <span class="font-weight-500 color-black whie-s-nowrap responsive-fonts">(555)
+                                802-1234</span>
                         </div>
                         <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block">
                             <span class="responsive-fonts font-weight-500 free-quote-text whie-s-nowrap">
@@ -75,14 +77,15 @@
                     </div>
 
                 </div>
-                <div class="collapse navbar-collapse navLinks-responsive justify-content-center"
+                <div class="collapse navbar-collapse navLinks-responsive justify-content-center w-100"
                     id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav w-100 justify-content-between">
                         <li class="position-relative nav-item navLinkHover mx-3">
                             <a class="nav-item nav-link nav-links-margin active" href="#">
                                 <span class="nav-link-border"></span>
-                                <div class="d-flex align-items-center">
-                                    <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Home</span>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span
+                                        class="responsive-fonts font-weight-500 color-black whie-s-nowrap ">Home</span>
                                     <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
                                 </div>
                                 <span class="sr-only">(current)</span>
@@ -98,7 +101,7 @@
                         <li id="services-link" class="mx-3 position-static li nav-item navLinkHover">
                             <a class="position-relative nav-item nav-link nav-links-margin " href="#">
                                 <span class="nav-link-border"></span>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
                                     <span
                                         class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Services</span>
                                     <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
@@ -155,15 +158,16 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mx-3 li nav-item navLinkHover">
-                            <a class="position-relative nav-item nav-link nav-links-margin " href="#">
+                        <li class="mx-3 li nav-item navLinkHover text-center">
+                            <a class="position-relative nav-item nav-link nav-links-margin text-center"
+                                href="why-us.html" target="_blank">
                                 <span class="nav-link-border"></span>
                                 <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Why Us</span>
                             </a>
                         </li>
-                        <li class="hide-on-md mx-3 li nav-item navLinkHover">
+                        <li class="mx-3 li nav-item navLinkHover">
 
-                            <a class="position-relative nav-item nav-link nav-links-margin " href="#">
+                            <a class="position-relative nav-item nav-link nav-links-margin text-center" href="#">
                                 <span class="nav-link-border"></span>
                                 <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Case
                                     Studies</span>
@@ -171,14 +175,16 @@
                         </li>
                         <li class="li nav-item navLinkHover mx-3">
 
-                            <a class="position-relative navLinkHover nav-item nav-link nav-links-margin" href="#">
+                            <a class="position-relative navLinkHover nav-item nav-link nav-links-margin text-center"
+                                href="#">
                                 <span class="nav-link-border"></span>
                                 <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">About </span>
                             </a>
                         </li>
-                        <li class="hide-on-md li nav-item navLinkHover">
+                        <li class="li text-center nav-item navLinkHover">
 
-                            <a class="position-relative nav-item nav-link nav-links-margin mx-3" href="#">
+                            <a class="position-relative nav-item nav-link nav-links-margin mx-3" href="blog.html"
+                                target="_blank">
                                 <span class="nav-link-border"></span>
                                 <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Blog </span>
                             </a>
@@ -186,8 +192,8 @@
 
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <header id="header" class="pb-4 max-wrapper">
             <div class="container-fluid ">
                 <div class="hero-section pb-lg-4 pb-md-4">
@@ -242,8 +248,7 @@
                                 <div class="hero-leftimg position-relative p-lg-4 p-md-4  h-100">
                                     <div class="p-md-5 p-lg-5 position-relative h-100 ">
 
-                                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/why-us-intro.jpg"
-                                            width="100%" alt="">
+                                        <img src="images/why-us-intro.jpg" width="100%" alt="">
                                         <div class="hero-left-img p-4">
                                             <h4 class="font-weight-700">HEMISFERIO</h4>
                                             <P class="my-3 responsive-fonts">
@@ -276,56 +281,34 @@
                 </h4>
                 <div class="owl-carousel my-4">
                     <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/abstract.png"
-                            width="100%" alt="Lorem">
+                        <img src="images/next.png" width="100%" alt="Lorem">
+                    </div>
+                    <div class="carouselItem max-w-200px mx-auto">
+                        <img src="images/cglobal.png" width="100%" alt="Lorem">
+                    </div>
+                    <div class="carouselItem max-w-200px mx-auto">
+                        <img src="images/digitalbox.png" width="100%" alt="Lorem">
+                    </div>
+                    <div class="carouselItem max-w-200px mx-auto">
+                        <img src="images/abstract.png" width="100%" alt="Lorem">
+                    </div>
+                    <div class="carouselItem max-w-200px mx-auto">
+                        <img src="images/spaces.png" width="100%" alt="Lorem">
+                    </div>
+                    <div class="carouselItem max-w-200px mx-auto">
+                        <img src="images/hemisferio.png" width="100%" alt="Lorem">
+                    </div>
+                    <div class="carouselItem max-w-200px mx-auto">
+                        <img src="images/next.png" width="100%" alt="Lorem">
                     </div>
                     <div class="carouselItem max-w-200px mx-auto">
                         <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
                             width="100%" alt="Lorem">
                     </div>
+
+
                     <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/next.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/digitalbox.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/next.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/next.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/digitalbox.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/next.png"
-                            width="100%" alt="Lorem">
-                    </div>
-                    <div class="carouselItem max-w-200px mx-auto">
-                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
-                            width="100%" alt="Lorem">
+                        <img src="images/abstract.png" width="100%" alt="Lorem">
                     </div>
                 </div>
             </div>
@@ -503,8 +486,7 @@
                     <h4 class="md-title font-weight-700 text-center my-4">Awards</h4>
                     <div class="col-md-3 col-lg-3 col-sm-6 col-6 wow fadeInUp">
                         <div class="awards-img mx-auto awards-img1">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png"
-                                width="100%" alt="">
+                            <img src="images/award-a.png" width="100%" alt="">
                         </div>
                         <div class="awards-text">
                             <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
@@ -512,8 +494,7 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-sm-6 col-6 wow fadeInUp">
                         <div class="awards-img mx-auto awards-img2">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png"
-                                width="100%" alt="">
+                            <img src="images/award-b.png" width="100%" alt="">
                         </div>
                         <div class="awards-text">
                             <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
@@ -521,8 +502,7 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-sm-6 col-6 wow fadeInUp">
                         <div class="awards-img mx-auto awards-img3">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png"
-                                width="100%" alt="">
+                            <img src="images/award-c.png" width="100%" alt="">
                         </div>
                         <div class="awards-text">
                             <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
@@ -530,8 +510,7 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-sm-6 col-6 wow fadeInUp">
                         <div class="awards-img mx-auto awards-img4">
-                            <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png"
-                                width="100%" alt="">
+                            <img src="images/award-d.png" width="100%" alt="">
                         </div>
                         <div class="awards-text">
                             <h4 class="md-title text-center">Winner Seo Master MAGT Smart Start Award 2017</h4>
@@ -547,9 +526,7 @@
                     <div class="col-md-7 wow fadeInLeft">
                         <div class="col-img-spacing col-img-boxShadow">
                             <div class="col-img">
-                                <img class="border-radius-10"
-                                    src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/large-testimonial-2.jpg"
-                                    width="100%" alt="">
+                                <img class="border-radius-10" src="images/large-testimonial-2.jpg" width="100%" alt="">
                             </div>
                         </div>
                     </div>
@@ -577,8 +554,7 @@
                         <div class="sticky-row bg-white">
                             <div class="sticky-row-img-sec">
                                 <div class="sticky-row-img">
-                                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-expert-cta.png"
-                                        width="100%" alt="">
+                                    <img src="images/marketing-expert-cta.png" width="100%" alt="">
                                 </div>
                                 <div class="mx-5">
                                     <h4 class="color-black">Sandy Reiff</h4>
@@ -616,9 +592,8 @@
                     <div class="col-md-7">
                         <div class="col-img-spacing ">
                             <div class="col-img p-md-5 p-lg-5">
-                                <img class="border-radius-10"
-                                    src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/equip-leaders-from-strategy.png"
-                                    width="100%" alt="">
+                                <img class="border-radius-10" src="images/equip-leaders-from-strategy.png" width="100%"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -630,7 +605,7 @@
                                         <div data-toggle="collapse" class="tester" data-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">
                                             <div class="collapBtn d-flex align-items-center c-pointer">
-                                                <i id="plus1" class="plus-minus-icon color-primary fa fa-plus"></i>
+                                                <i id="plus1" class="plus-minus-icon color-primary fa fa-minus"></i>
                                                 <h4
                                                     class="w-100 hover-c-primary md-title my-0 collap-title-margin color-black">
                                                     Customer Service</h4>
@@ -639,7 +614,7 @@
                                     </h5>
                                 </div>
 
-                                <div id="collapseOne" class="collapser collapse" aria-labelledby="headingOne"
+                                <div id="collapseOne" class="collapser show collapse" aria-labelledby="headingOne"
                                     data-parent="#accordion">
                                     <div class="card-body mt-3">
                                         <p class="responsive-fonts line-height-1-6">
@@ -763,8 +738,8 @@
                                     <div data-toggle="collapse" class="tester" data-target="#col-collapseOne"
                                         aria-expanded="true" aria-controls="col-collapseOne">
                                         <div class="collapBtn d-flex align-items-center c-pointer">
-                                            <h4 class="w-100 hover-c-primary md-title my-0   color-black">Vivamus id
-                                                ante vel purus commodo cursus? Nunc sit amet cursus massa?</h4>
+                                            <h5 class="w-100 hover-c-primary md-title my-0 color-black">Vivamus id
+                                                ante vel purus commodo cursus? Nunc sit amet cursus massa?</h5>
                                             <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
                                         </div>
                                     </div>
@@ -793,9 +768,9 @@
                                     <div data-toggle="collapse" class="tester" data-target="#col-collapseTwo"
                                         aria-expanded="true" aria-controls="col-collapseTwo">
                                         <div class="collapBtn d-flex align-items-center c-pointer">
-                                            <h4 class="w-100 hover-c-primary md-title my-0 color-black">Quisque aliquet,
+                                            <h5 class="w-100 hover-c-primary md-title my-0 color-black">Quisque aliquet,
                                                 libero consequat elementum convallis, erat risus imperdiet?</h4>
-                                            <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
+                                                <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
                                         </div>
                                     </div>
                                 </h5>
@@ -823,9 +798,9 @@
                                     <div data-toggle="collapse" class="tester" data-target="#col-collapseThree"
                                         aria-expanded="true" aria-controls="col-collapseThree">
                                         <div class="collapBtn d-flex align-items-center c-pointer">
-                                            <h4 class="w-100 hover-c-primary md-title my-0 color-black">Duis vel risus
+                                            <h5 class="w-100 hover-c-primary md-title my-0 color-black">Duis vel risus
                                                 egestas, viverra enim sed, pretium velit?</h4>
-                                            <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
+                                                <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
                                         </div>
                                     </div>
                                 </h5>
@@ -853,8 +828,8 @@
                                     <div data-toggle="collapse" class="tester" data-target="#col-collapseFour"
                                         aria-expanded="true" aria-controls="col-collapseFour">
                                         <div class="collapBtn d-flex align-items-center c-pointer">
-                                            <h4 class="w-100 hover-c-primary md-title my-0  color-black">Curabitur
-                                                ornare felis sit amet neque volutpat, porta lobortis elit rutrum?</h4>
+                                            <h5 class="w-100 hover-c-primary md-title my-0  color-black">Curabitur
+                                                ornare felis sit amet neque volutpat, porta lobortis elit rutrum?</h5>
                                             <i id="plus1" class="plus-minus-icon color-primary  fa fa-plus"></i>
                                         </div>
                                     </div>
@@ -927,8 +902,7 @@
                     <div class="col-md-4">
                         <div class="help-card">
                             <div class="help-card-img position-relative">
-                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg"
-                                    width="100%" alt="">
+                                <img src="images/case-studies-4.jpg" width="100%" alt="">
 
                                 <a class="hlp-card-overlay" href="#"></a>
 
@@ -951,8 +925,7 @@
                     <div class="col-md-4">
                         <div class="help-card">
                             <div class="help-card-img position-relative">
-                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg"
-                                    width="100%" alt="">
+                                <img src="images/case-studies-6.jpg" width="100%" alt="">
 
                                 <a class="hlp-card-overlay" href="#"></a>
 
@@ -991,8 +964,7 @@
                                 offline. We have experienced year on year growth due to their progressive approach.”
                             </h4>
                             <div class="sticky-row-img mx-auto">
-                                <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/small-testimonial.jpg"
-                                    width="100%" alt="">
+                                <img src="images/small-testimonial.jpg" width="100%" alt="" title="Melissa Dean">
                             </div>
                             <h4 class="color-black my-2">Melissa Dean</h4>
                             <p class="text-secondary small-text-center d-block">Marketing Consultant Expert
@@ -1007,7 +979,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="black-container">
+                        <div class="black-container border-radius-10">
                             <div class="w-md-60 mx-md-4 mx-lg-5">
                                 <div>
                                     <h4 class="bigger-title text-white text-center">
@@ -1016,8 +988,8 @@
                                 </div>
                                 <div class="mx-auto contact-form bg-white" id="blackForm-container">
                                     <div class="mx-auto" style="max-width: 110px;">
-                                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg"
-                                            width="100%" class="rounded-circle" alt="">
+                                        <img src="images/marketing-consultant-expert.jpg" width="100%"
+                                            class="rounded-circle" alt="">
                                     </div>
                                     <h4 class="color-black my-2 text-center">Melissa Dean</h4>
                                     <p class="text-secondary text-center d-block">Marketing Consultant Expert
@@ -1055,23 +1027,19 @@
                                 </div>
                                 <div class="owl-carousel blackCarousel my-4 ">
                                     <div class="carouselItem max-w-200px mx-auto">
-                                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/abstract.png"
-                                            width="100%" alt="Lorem">
+                                        <img src="images/abstract.png" width="100%" alt="Lorem">
                                     </div>
 
 
                                     <div class="carouselItem max-w-200px mx-auto">
-                                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/digitalbox.png"
-                                            width="100%" alt="Lorem">
+                                        <img src="images/digitalbox.png" width="100%" alt="Lorem">
                                     </div>
 
                                     <div class="carouselItem max-w-200px mx-auto">
-                                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/next.png"
-                                            width="100%" alt="Lorem">
+                                        <img src="images/next.png" width="100%" alt="Lorem">
                                     </div>
                                     <div class="carouselItem max-w-200px mx-auto">
-                                        <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/cglobal.png"
-                                            width="100%" alt="Lorem">
+                                        <img src="images/cglobal.png" width="100%" alt="Lorem">
                                     </div>
                                 </div>
                             </div>
@@ -1171,7 +1139,7 @@
                                             class="font-20px hover-c-primary color-black my-2 d-block footer-link">
                                             Customers
                                         </a></li>
-                                    <li> <a href="#"
+                                    <li> <a href="blog.html" target="_blank"
                                             class="font-20px hover-c-primary color-black my-2 d-block footer-link">
                                             Blog
                                         </a></li>
@@ -1248,25 +1216,47 @@
         new WOW().init();
 
         // toggleing plus minus icons
-        const collapBtn = document.querySelectorAll('.collapBtn');
-        const collapser = document.querySelectorAll('.collapser');
-        const icons = document.querySelectorAll('.plus-minus-icon');
+        // const collapBtn = document.querySelectorAll('.collapBtn');
+        // const collapser = document.querySelectorAll('.collapser');
+        // const icons = document.querySelectorAll('.plus-minus-icon');
 
-        collapBtn.forEach((btn, idx) => {
-            btn.addEventListener('click', () => {
-                icons.forEach((icon, idx1) => {
-                    if (idx === idx1) {
-                        const currentIcon = icon.className;
-                        if (currentIcon.includes('fa-minus'))
-                            icon.classList.replace('fa-minus', 'fa-plus');
-                        else icon.classList.replace('fa-plus', 'fa-minus');
-                    } else icon.classList.replace('fa-minus', 'fa-plus');
-                });
-            });
-        });
+
+
+
+        // collapBtn.forEach((btn, idx) => {
+        //     btn.addEventListener('click', () => {
+        //         collapser.forEach((col) => {
+        //             icons.forEach((icon, idx1) => {
+        //                 if (idx === idx1) {
+        //                     const currentIcon = icon.className;
+        //                     if (currentIcon.includes('fa-minus'))
+        //                         icon.classList.replace('fa-minus', 'fa-plus');
+        //                     else icon.classList.replace('fa-plus', 'fa-minus');
+        //                 } else icon.classList.replace('fa-minus', 'fa-plus');
+        //                 if (idx === idx1) {
+
+
+        //                 }
+        //             });
+        //         });
+        //     });
+        // });
 
 
         $(document).ready(function () {
+
+            $('.collapBtn').click(function () {
+                if ($(this).find('i.fa').hasClass('fa-minus')) {
+                    $(this).find('i.fa').removeClass('fa-minus');
+                    $(this).find('i.fa').addClass('fa-plus');
+                }
+                else if ($(this).find('i.fa').hasClass('fa-plus')) {
+                    $(this).find('i.fa').removeClass('fa-plus');
+                    $(this).find('i.fa').addClass('fa-minus');
+                }
+
+            })
+
 
             const responSive = {
                 0: {

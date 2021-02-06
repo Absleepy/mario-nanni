@@ -9,189 +9,173 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- fontawesom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="owlCarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlCarousel/owl.theme.default.min.css">
+
     <!-- my styling -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <title>Mario-nanni</title>
     <!-- wow js -->
     <link rel="stylesheet" href="css/animate.css">
 
-    <!-- styling carousel dots -->
-    <style>
-        .owl-carousel .owl-dots {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 20px;
-        }
 
-        .owl-carousel .owl-dots .owl-dot {
-            border: 1px solid #f86011;
-            width: 20px;
-            height: 20px;
-            outline: none;
-            border-radius: 50%;
-        }
-
-        .owl-carousel .owl-dot.active {
-            background-color: #f86011;
-            border-radius: 50%;
-        }
-    </style>
 </head>
 
 <body>
 
     <div class="wrapper">
+        <div class="bg-white sticky-top">
+            <nav data-wow-duration=".7s" data-wow-delay=".01s"
+                class="wow fadeInDown container-fluid  bg-white navbar  navbar-light navbar-expand-lg py-0 justifyCenter-on-big py-lg-4 py-md-4 py-2 px-3 max-wrapper">
 
-        <nav data-wow-duration=".7s" data-wow-delay=".01s"
-            class="wow fadeInDown container-fluid  bg-white navbar sticky-top navbar-light navbar-expand-lg py-0 justifyCenter-on-big py-lg-4 py-md-4 py-2 px-3 ">
-
-            <strong id="logo">
-                <a class="navbar-brand d-block" href="#">
-                    <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/avada-marketing-logo-2x.png"
-                        class="logo" width="100%" alt="Logo">
-                </a>
-            </strong>
-
-            <button class="navbar-toggler order2 " type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="order1 nav-right-side ml-auto hide-on-phone">
-                <div class="d-flex align-items-center after-border gap-12">
-                    <div class="d-flex align-items-center">
-                        <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
-                        <span class="font-weight-500 color-black whie-s-nowrap">(555) 802-1234</span>
-                    </div>
-                    <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block">
-                        <span class="responsive-fonts font-weight-500 free-quote-text whie-s-nowrap">
-                            Free Quote
-                        </span>
+                <strong id=" logo">
+                    <a class="navbar-brand d-block" href="#">
+                        <img src="images/avada-marketing-logo-2x.png" class="logo" width="100%" alt="Logo">
                     </a>
+                </strong>
+
+                <button class="navbar-toggler order2 " type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>Menu</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="order1 nav-right-side ml-auto hide-on-phone">
+                    <div class="d-flex align-items-center after-border gap-12">
+                        <div class="d-flex align-items-center">
+                            <span class="color-primary mx-3"><i class="fa fa-phone"></i></span>
+                            <span class="font-weight-500 color-black whie-s-nowrap responsive-fonts">(555)
+                                802-1234</span>
+                        </div>
+                        <a href="#" class="light-pink-btn border-radius-10  bg-light-pink d-inline-block">
+                            <span class="responsive-fonts font-weight-500 free-quote-text whie-s-nowrap">
+                                Free Quote
+                            </span>
+                        </a>
+
+                    </div>
 
                 </div>
-
-            </div>
-            <div class="collapse navbar-collapse navLinks-responsive justify-content-center" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="position-relative nav-item navLinkHover mx-3">
-                        <a class="nav-item nav-link nav-links-margin active" href="#">
-                            <span class="nav-link-border"></span>
-                            <div class="d-flex align-items-center">
-                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Home</span>
-                                <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
+                <div class="collapse navbar-collapse navLinks-responsive justify-content-center w-100"
+                    id="navbarNavAltMarkup">
+                    <ul class="navbar-nav w-100 justify-content-between">
+                        <li class="position-relative nav-item navLinkHover mx-3">
+                            <a class="nav-item nav-link nav-links-margin active" href="#">
+                                <span class="nav-link-border"></span>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span
+                                        class="responsive-fonts font-weight-500 color-black whie-s-nowrap ">Home</span>
+                                    <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
+                                </div>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            <div class="hide-992 position-absolute nav-link-drop-down">
+                                <ul class="d-flex flex-column">
+                                    <li class="nav-link-dropDrown-li bg-white"><a
+                                            class="p-4 hover-c-primary responsive-fonts font-weight-500 color-black whie-s-nowrap d-block"
+                                            href="#">Home Alternate</a></li>
+                                </ul>
                             </div>
-                            <span class="sr-only">(current)</span>
-                        </a>
-                        <div class="hide-992 position-absolute nav-link-drop-down">
-                            <ul class="d-flex flex-column">
-                                <li class="nav-link-dropDrown-li bg-white"><a
-                                        class="p-4 hover-c-primary responsive-fonts font-weight-500 color-black whie-s-nowrap d-block"
-                                        href="#">Home Alternate</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li id="services-link" class="mx-3 position-static li nav-item navLinkHover">
-                        <a class="position-relative nav-item nav-link nav-links-margin " href="#">
-                            <span class="nav-link-border"></span>
-                            <div class="d-flex align-items-center">
-                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Services</span>
-                                <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
-                            </div>
-                        </a>
-                        <div
-                            class="bg-white container hide-992 primary-box-shadow position-absolute services-drop-down">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="mega-menu-card p-3">
-                                        <div
-                                            class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
-                                            <i class="fa fa-eye"></i>
+                        </li>
+                        <li id="services-link" class="mx-3 position-static li nav-item navLinkHover">
+                            <a class="position-relative nav-item nav-link nav-links-margin " href="#">
+                                <span class="nav-link-border"></span>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span
+                                        class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Services</span>
+                                    <span class="nav-link-angle color-black"><i class="fa fa-angle-down"></i></span>
+                                </div>
+                            </a>
+                            <div
+                                class="bg-white container hide-992 primary-box-shadow position-absolute services-drop-down">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mega-menu-card p-3">
+                                            <div
+                                                class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-blue c-pointer">
+                                                <i class="fa fa-eye"></i>
+                                            </div>
+                                            <div class="mega-menu-card-text">
+                                                <h3 class="menu-card-title my-3"><a href="#"
+                                                        class="color-black font-weight-500  hover-c-primary">Strategic
+                                                        Marketing Plan</a></h3>
+                                                <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
+                                                    mattis scelerisque eu ut tortor.</p>
+                                            </div>
                                         </div>
-                                        <div class="mega-menu-card-text">
-                                            <h3 class="menu-card-title my-3"><a href="#"
-                                                    class="color-black font-weight-500  hover-c-primary">Strategic
-                                                    Marketing Plan</a></h3>
-                                            <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
-                                                mattis scelerisque eu ut tortor.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mega-menu-card p-3">
+                                            <div
+                                                class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-pink c-pointer">
+                                                <i class="fa fa-eye"></i>
+                                            </div>
+                                            <div class="mega-menu-card-text">
+                                                <h3 class="menu-card-title my-3"><a href="#"
+                                                        class="color-black font-weight-500  hover-c-primary">Sales
+                                                        Development</a></h3>
+                                                <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
+                                                    mattis scelerisque eu ut tortor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mega-menu-card p-3">
+                                            <div
+                                                class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-green c-pointer">
+                                                <i class="fa fa-eye"></i>
+                                            </div>
+                                            <div class="mega-menu-card-text">
+                                                <h3 class="menu-card-title my-3"><a href="#"
+                                                        class="color-black font-weight-500  hover-c-primary">Digital
+                                                        Marketing</a></h3>
+                                                <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
+                                                    mattis scelerisque eu ut tortor.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="mega-menu-card p-3">
-                                        <div
-                                            class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-pink c-pointer">
-                                            <i class="fa fa-eye"></i>
-                                        </div>
-                                        <div class="mega-menu-card-text">
-                                            <h3 class="menu-card-title my-3"><a href="#"
-                                                    class="color-black font-weight-500  hover-c-primary">Sales
-                                                    Development</a></h3>
-                                            <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
-                                                mattis scelerisque eu ut tortor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mega-menu-card p-3">
-                                        <div
-                                            class="mega-menu-card-icon d-flex justify-content-center align-items-center icon-bg-light-green c-pointer">
-                                            <i class="fa fa-eye"></i>
-                                        </div>
-                                        <div class="mega-menu-card-text">
-                                            <h3 class="menu-card-title my-3"><a href="#"
-                                                    class="color-black font-weight-500  hover-c-primary">Digital
-                                                    Marketing</a></h3>
-                                            <p class="my-3 responsive-fonts">Maecenas ut erat malesuada tortor
-                                                mattis scelerisque eu ut tortor.</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="mx-3 li nav-item navLinkHover">
-                        <a class="position-relative nav-item nav-link nav-links-margin " href="why-us.html"
-                            target="_blank">
-                            <span class="nav-link-border"></span>
-                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Why Us</span>
-                        </a>
-                    </li>
-                    <li class="hide-on-md mx-3 li nav-item navLinkHover">
+                        </li>
+                        <li class="mx-3 li nav-item navLinkHover text-center">
+                            <a class="position-relative nav-item nav-link nav-links-margin text-center"
+                                href="why-us.html" target="_blank">
+                                <span class="nav-link-border"></span>
+                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Why Us</span>
+                            </a>
+                        </li>
+                        <li class="mx-3 li nav-item navLinkHover">
 
-                        <a class="position-relative nav-item nav-link nav-links-margin " href="#">
-                            <span class="nav-link-border"></span>
-                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Case
-                                Studies</span>
-                        </a>
-                    </li>
-                    <li class="li nav-item navLinkHover mx-3">
+                            <a class="position-relative nav-item nav-link nav-links-margin text-center" href="#">
+                                <span class="nav-link-border"></span>
+                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Case
+                                    Studies</span>
+                            </a>
+                        </li>
+                        <li class="li nav-item navLinkHover mx-3">
 
-                        <a class="position-relative navLinkHover nav-item nav-link nav-links-margin" href="#">
-                            <span class="nav-link-border"></span>
-                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">About </span>
-                        </a>
-                    </li>
-                    <li class="hide-on-md li nav-item navLinkHover">
+                            <a class="position-relative navLinkHover nav-item nav-link nav-links-margin text-center"
+                                href="#">
+                                <span class="nav-link-border"></span>
+                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">About </span>
+                            </a>
+                        </li>
+                        <li class="li text-center nav-item navLinkHover">
 
-                        <a class="position-relative nav-item nav-link nav-links-margin mx-3" href="#">
-                            <span class="nav-link-border"></span>
-                            <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Blog </span>
-                        </a>
-                    </li>
+                            <a class="position-relative nav-item nav-link nav-links-margin mx-3" href="blog.html"
+                                target="_blank">
+                                <span class="nav-link-border"></span>
+                                <span class="responsive-fonts font-weight-500 color-black whie-s-nowrap">Blog </span>
+                            </a>
+                        </li>
 
-                </ul>
-            </div>
-        </nav>
-        <header id="header" class="home-header pb-4">
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header id="header" class="home-header pb-4 wow fadeInDown">
             <div class="container-fluid home-hero max-wrapper">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="small-text-center">
+                        <div class="small-text-center wow fadeInLeft">
                             <h1 class="hero-heading font-weight-700 bigger-title text-white my-3">
                                 Unlock Your Online Growth Potential
                             </h1>
@@ -203,7 +187,7 @@
                                 <a href="#"
                                     class="bg-white d-inline-block border-radius-10 py-3 color-black px-5 hiteBtn">
                                     <div class="d-flex align-items-center">
-                                        <span class="mx-2">Our Services</span>
+                                        <strong class="mx-2">Our Services</strong>
                                         <span><i class="fa fa-arrow-right"></i></span>
                                     </div>
                                 </a>
@@ -211,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <div class="mx-auto contact-form bg-white primary-box-shadow">
+                        <div class="mx-auto contact-form bg-white primary-box-shadow wow fadeInRight">
                             <div class="mx-auto" style="max-width: 110px;">
                                 <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg"
                                     width="100%" class="rounded-circle" alt="">
@@ -419,33 +403,33 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="md-w-60 mx-auto py-lg-5 py-md-4">
-                            <h2 class="big-title font-weight-700 text-center">
+                        <div class="md-w-60 mx-auto py-lg-5 py-md-4 ">
+                            <h2 class="big-title font-weight-700 text-center wow fadeInLeft">
                                 Some Brands We Work With
                             </h2>
-                            <h3 class="text-center">
+                            <h3 class="text-center wow fadeInUp">
                                 Quisque aliquet, libero consequat elementum convallis.
                             </h3>
                         </div>
-                        <div class="row">
+                        <div class="row wow fadeInUp">
                             <div class="col-md-12">
-                                <div class="d-flex align-items-center justify-content-center ">
-                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                <div class="d-flex flex-wrap-small align-items-center justify-content-center ">
+                                    <div class="max-w-200px p-4 mx-auto">
                                         <img src="images/abstract.png" width="100%" alt="Lorem">
                                     </div>
-                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                    <div class="max-w-200px p-4 mx-auto">
                                         <img src="images/cglobal.png" width="100%" alt="Lorem">
                                     </div>
-                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                    <div class="max-w-200px p-4 mx-auto">
                                         <img src="images/digitalbox.png" width="100%" alt="Lorem">
                                     </div>
-                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                    <div class="max-w-200px p-4 mx-auto">
                                         <img src="images/hemisferio.png" width="100%" alt="Lorem">
                                     </div>
-                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                    <div class="max-w-200px p-4 mx-auto">
                                         <img src="images/next.png" width="100%" alt="Lorem">
                                     </div>
-                                    <div class="carouselItem max-w-200px p-4 mx-auto">
+                                    <div class="max-w-200px p-4 mx-auto">
                                         <img src="images/spaces.png" width="100%" alt="Lorem">
                                     </div>
 
@@ -458,7 +442,7 @@
         </section>
 
         <section class="max-wrapper py-md-4 py-lg-4 sticky-sec">
-            <div class="container-fluid">
+            <div class="container-fluid wow fadeInDown">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="sticky-row bg-white">
@@ -488,13 +472,13 @@
         </section>
 
         <section class="max-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid wow fadeInDown">
                 <h2 class="text-center py-md-5 py-lg-5 py-2 big-title font-weight-700">
                     Trusted by Leading Organisations
                 </h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="help-card">
+                        <div class="help-card wow fadeInDown">
                             <div class="help-card-img position-relative">
                                 <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-1.jpg"
                                     width="100%" alt="">
@@ -502,12 +486,13 @@
                                 <a class="hlp-card-overlay" href="#"></a>
 
                             </div>
-                            <div class="my-md-4 my-lg-4 help-card-link">
+                            <div class="my-3 my-md-4 my-lg-4 help-card-link wow fadeInDown" data-wow-delay=".5s"
+                                data-wow-duration="1s">
                                 <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
                                     How Spaces attracted five million visitors by improving the content
                                 </a>
                             </div>
-                            <div class="help-card-footer py-md-4 py-lg-4">
+                            <div class="wow fadeInUp help-card-footer py-md-4 py-lg-4">
                                 <p class="big-title">
                                     200%
                                 </p>
@@ -518,7 +503,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="help-card">
+                        <div class="help-card wow fadeInDown">
                             <div class="help-card-img position-relative">
                                 <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg"
                                     width="100%" alt="">
@@ -526,12 +511,13 @@
                                 <a class="hlp-card-overlay" href="#"></a>
 
                             </div>
-                            <div class="my-md-4 my-lg-4 help-card-link">
+                            <div class="my-3 my-md-4 my-lg-4 help-card-link wow fadeInDown" data-wow-delay=".5s"
+                                data-wow-duration="1s">
                                 <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
                                     How Spaces attracted five million visitors by improving the content
                                 </a>
                             </div>
-                            <div class="help-card-footer py-md-4 py-lg-4">
+                            <div class="wow fadeInUp help-card-footer py-md-4 py-lg-4">
                                 <p class="big-title">
                                     10x
                                 </p>
@@ -542,7 +528,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="help-card">
+                        <div class="help-card wow fadeInDown">
                             <div class="help-card-img position-relative">
                                 <img src="https://avada.theme-fusion.com/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg"
                                     width="100%" alt="">
@@ -550,12 +536,13 @@
                                 <a class="hlp-card-overlay" href="#"></a>
 
                             </div>
-                            <div class="my-md-4 my-lg-4 help-card-link">
+                            <div class="my-3 my-md-4 my-lg-4 help-card-link wow fadeInDown" data-wow-delay=".5s"
+                                data-wow-duration="1s">
                                 <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
                                     How Spaces attracted five million visitors by improving the content
                                 </a>
                             </div>
-                            <div class="help-card-footer py-md-4 py-lg-4">
+                            <div class="wow fadeInUp help-card-footer py-md-4 py-lg-4">
                                 <p class="big-title">
                                     3-year
                                 </p>
@@ -609,7 +596,7 @@
                 </div>
                 <div class="row align-items-center py-5">
                     <div class="col-md-6">
-                        <div class="col-left-margin animated wow fadeInRight">
+                        <div class="col-left-margin animated wow fadeInLeft">
                             <div class="my-4">
                                 <h3 class="font-weight-700">We Build Relationships</h3>
                                 <h5 class="my-2 line-height-1-6">
@@ -618,7 +605,7 @@
                                 </h5>
                             </div>
                         </div>
-                        <div class="my-5 col-left-margin animated wow fadeInRight">
+                        <div class="my-5 col-left-margin animated  wow fadeInLeft">
                             <div class="my-4">
                                 <h3 class="font-weight-700">Proprietary Processes</h3>
                                 <h5 class="my-2 line-height-1-6">
@@ -629,7 +616,8 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="mb-5 weBuild-icons-text d-flex align-items-center">
+                        <div class="mb-5 weBuild-icons-text d-flex align-items-center wow fadeInDown"
+                            data-wow-duration="1.5s" data-wow-delay=".01s">
                             <div class="weBuild-icon-container">
                                 <div class="weBuild-icon">
                                     <i class="fa fa-plus"></i>
@@ -643,7 +631,8 @@
                                 </h5>
                             </div>
                         </div>
-                        <div class="mb-5 weBuild-icons-text d-flex align-items-center">
+                        <div class="mb-5 weBuild-icons-text d-flex align-items-center wow fadeInDown"
+                            data-wow-duration="1.5s" data-wow-delay="1s">
                             <div class="weBuild-icon-container">
                                 <div class="weBuild-icon">
                                     <i class="fa fa-plus"></i>
@@ -657,7 +646,8 @@
                                 </h5>
                             </div>
                         </div>
-                        <div class="mb-5 weBuild-icons-text d-flex align-items-center">
+                        <div class="mb-5 weBuild-icons-text d-flex align-items-center wow fadeInDown"
+                            data-wow-duration="1.5s" data-wow-delay="1.7s">
                             <div class="weBuild-icon-container">
                                 <div class="weBuild-icon">
                                     <i class="fa fa-plus"></i>
@@ -674,7 +664,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid max-wrapper">
+            <div class="container-fluid max-wrapper wow fadeInUpBig" data-wow-duration="1.1s" data-wow-delay=".2s">
                 <div class="row py-lg-4 py-lg-4 py-2" style="padding-bottom: 50px !important">
                     <h4 class="md-title font-weight-700 text-center my-4">Awards</h4>
                     <div class="col-md-3 col-lg-3 col-sm-6 col-6">
@@ -721,14 +711,14 @@
             <div class="container-fluid">
                 <div class="row  align-items-center" style="padding-bottom: 6% !important; padding-top: 5%;">
                     <div class="col-md-7">
-                        <div class="col-img-spacing col-img-boxShadow">
+                        <div class="col-img-spacing col-img-boxShadow wow fadeInLeft">
                             <div class="col-img">
                                 <img class="border-radius-10" src="images/glasses-girl.jpg" width="100%" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <div class="col-text-spacing">
+                        <div class="col-text-spacing wow fadeInRight">
                             <p class="small-text-center md-title font-weight-700 f-family-cursive mb-md-4">
                                 “The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential
                                 online and offline. We have experienced year on year growth due to their progressive
@@ -750,12 +740,12 @@
             <div class="container-fluid max-wrapper">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <h2 class="mx-5 big-title font-weight-700">
+                        <h2 class="mx-5 big-title font-weight-700 wow fadeInLeft">
                             Marketing Resources: Insider Advice on How to Increase Online Sales
                         </h2>
                     </div>
                     <div class="col-md-6">
-                        <div class="btn-c-primary my-4 text-right">
+                        <div class="btn-c-primary my-4 text-right wow fadeInRight">
                             <button type="button" class="primary-hovered border-radius-10 font-weight-500">
                                 <span>Explore All Resources</span>
                             </button>
@@ -764,14 +754,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="help-card">
+                        <div class="help-card wow fadeInDown">
                             <div class="help-card-img position-relative">
                                 <img src="images/laptop.jpg" width="100%" alt="">
 
                                 <a class="hlp-card-overlay" href="#"></a>
 
                             </div>
-                            <div class="my-md-4 my-lg-4 help-card-link">
+                            <div class="my-3 my-md-4 my-lg-4 help-card-link wow fadeInDown" data-wow-delay=".5s"
+                                data-wow-duration="1s">
                                 <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
                                     Marketing Tips And Tricks For Your Website
                                 </a>
@@ -780,14 +771,15 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="help-card">
+                        <div class="help-card wow fadeInDown">
                             <div class="help-card-img position-relative">
                                 <img src="images/blog-posts-5.jpg" width="100%" alt="">
 
                                 <a class="hlp-card-overlay" href="#"></a>
 
                             </div>
-                            <div class="my-md-4 my-lg-4 help-card-link">
+                            <div class="my-3 my-md-4 my-lg-4 help-card-link wow fadeInDown" data-wow-delay=".5s"
+                                data-wow-duration="1s">
                                 <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
                                     How to Write Stunning Blog Post Titles
                                 </a>
@@ -796,14 +788,15 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="help-card">
+                        <div class="help-card wow fadeInDown">
                             <div class="help-card-img position-relative">
                                 <img src="images/blog-posts-4.jpg" width="100%" alt="">
 
                                 <a class="hlp-card-overlay" href="#"></a>
 
                             </div>
-                            <div class="my-md-4 my-lg-4 help-card-link">
+                            <div class="my-3 my-md-4 my-lg-4 help-card-link wow fadeInDown" data-wow-delay=".5s"
+                                data-wow-duration="1s">
                                 <a href="#" class="md-title color-black font-weight-700 hover-c-primary">
                                     Techniques to Reduce Facebook Ads Spend
                                 </a>
@@ -821,7 +814,7 @@
 
 
         <section class="black-section black-container">
-            <div class="container-fluid max-wrapper">
+            <div class="container-fluid max-wrapper wow fadeInRight">
                 <div class="row">
                     <div class="col-md-5">
 
@@ -887,7 +880,7 @@
             </div>
         </section>
 
-        <footer class="footer" id="footer">
+        <footer class="footer max-wrapper" id="footer">
             <div class="container-fluid">
                 <div class="row">
 
@@ -977,7 +970,7 @@
                                             class="font-20px hover-c-primary color-black my-2 d-block footer-link">
                                             Customers
                                         </a></li>
-                                    <li> <a href="#"
+                                    <li> <a href="blog.html" target="_blank"
                                             class="font-20px hover-c-primary color-black my-2 d-block footer-link">
                                             Blog
                                         </a></li>
@@ -1043,9 +1036,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- owl carousel -->
-    <script src="owlCarousel/jquery.min.js"></script>
-    <script src="owlCarousel/owl.carousel.min.js"></script>
+
+
     <!-- wow js -->
 
     <script src="js/wow.min.js"></script>
@@ -1054,37 +1046,6 @@
         new WOW().init();
 
 
-
-        $(document).ready(function () {
-
-
-
-
-            const responSive = {
-                0: {
-                    items: 2,
-                    dots: true,
-
-                },
-                600: {
-                    items: 3,
-                },
-                1000: {
-                    items: 5,
-                }
-            }
-
-
-
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                items: 5,
-                responsiveClass: true,
-                responsive: responSive
-            });
-
-
-        });
     </script>
 </body>
 
