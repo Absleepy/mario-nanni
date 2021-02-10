@@ -34,6 +34,9 @@ $center: center;
 .bg-light-pink {
   background-color: $light-pink;
 }
+.blog-bg-grey {
+  background-color: #f4f4f6;
+}
 .bg-grey {
   background-color: rgba(255, 255, 255, 0);
   background-image: linear-gradient(216deg, #f4f4f6 20%, #ffffff 100%);
@@ -154,8 +157,17 @@ nav {
     left: 0;
     transition: all calc(300 * 1ms) cubic-bezier(0.42, 0.01, 0.58, 1);
     transform: translateY(10px);
-    box-shadow: 0px 10px 12px -1px #e8e8e8;
-    border-radius: 10px;
+    // box-shadow: 0px 10px 12px -1px #e8e8e8;
+    ul {
+      a {
+        border-radius: 10px;
+        padding-top: 14px;
+        padding-right: 28px;
+        padding-bottom: 14px;
+        padding-left: 28px;
+        margin-top: 12px;
+      }
+    }
   }
   .nav-link-dropDrown-li {
     width: 248px !important;
@@ -320,6 +332,9 @@ nav {
 }
 .family-serif {
   font-family: sans-serif;
+}
+.font-1rem {
+  font-size: 1rem;
 }
 .font-24px {
   font-size: 24px;
@@ -980,7 +995,7 @@ nav {
 .blog-title {
   font-style: normal;
   letter-spacing: -0.042em;
-  font-size: 65px;
+  font-size: 70px;
 }
 .blog-writer-img {
   max-width: 40px;
@@ -1266,6 +1281,16 @@ nav {
 }
 
 @media (max-width: $phone) {
+  .footer-f-column {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-social-icons {
+    justify-content: center;
+  }
+  .whyUs-hero-section {
+    padding: 20px;
+  }
   .font-bigger {
     font-size: 50px !important;
   }
@@ -1316,6 +1341,7 @@ nav {
   }
   .marketing-card {
     padding: 12px 0;
+    margin: 12px;
   }
   .hide-on-phone {
     display: none;
@@ -1344,6 +1370,9 @@ nav {
   }
 }
 @media (min-width: 992px) {
+  .big-mt-4P {
+    margin-top: 4%;
+  }
   .col-right-margin {
     padding-top: 0px !important;
     padding-right: 0px !important;
@@ -1412,7 +1441,7 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 66.6666666667% !important;
+    width: 66.6666666667%;
     margin: 0 auto;
   }
   .mid-title {
